@@ -1,0 +1,32 @@
+# DMJK-Adresser.pdf vs 20261119232535091-DMJK-Layout.xml
+signal   is03     pdf [1005, 1006]  MISMATCH xml <sg> [1005]
+signal   moP1     pdf [1018]  MISMATCH xml <co> [1026]
+signal   si01     pdf [1001]  NOT IN XML
+signal   yoP1     pdf [1017]  MISMATCH xml <co> [1025]
+switch   iv02     pdf [113]  MISMATCH xml <sw> [412] iid=vrt
+switch   iv15     pdf [125]  MISMATCH xml <sw> [430] iid=vrt
+switch   iv17     pdf [126]  MISMATCH xml <sw> [432] iid=vrt
+switch   kv02     pdf [65]  MISMATCH xml <sw> [402] iid=vrt
+switch   kv05     pdf [67]  MISMATCH xml <sw> [404] iid=vrt
+switch   mv02     pdf [81]  MISMATCH xml <sw> [414] iid=vrt
+switch   mv13     pdf [87]  MISMATCH xml <sw> [424] iid=vrt
+switch   sv12     pdf [10]  MISMATCH xml <sw> [410] iid=vrt
+switch   sv14     pdf [11]  MISMATCH xml <sw> [408] iid=vrt
+switch   yv07     pdf [104]  MISMATCH xml <sw> [426] iid=vrt
+detector ib11     pdf [800]  MISMATCH xml <co> []
+detector ib12     pdf [801]  MISMATCH xml <co> []
+detector ib13     pdf [802]  MISMATCH xml <co> []
+detector ib14     pdf [803]  MISMATCH xml <co> []
+detector ib15     pdf [804]  MISMATCH xml <co> []
+detector ib16     pdf [805]  MISMATCH xml <co> []
+detector ib17     pdf [806]  MISMATCH xml <co> []
+detector ib18     pdf [807]  MISMATCH xml <co> []
+detector ib19     pdf [808]  MISMATCH xml <co> []
+detector ib20     pdf [809]  MISMATCH xml <co> []
+detector ib21     pdf [810]  MISMATCH xml <co> []
+detector moP1     pdf [688]  MISMATCH xml <co> [1026]
+detector yoP1     pdf [689]  MISMATCH xml <co> [1025]
+detector fb26     xml <fb> 800 is ['ib11'] in pdf
+detector fb27     xml <fb> 801 is ['ib12'] in pdf
+detector fb28     xml <fb> 803 is ['ib14'] in pdf
+signal   soSloc   xml <co> 528 is ['ss26'] in pdf

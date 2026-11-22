@@ -1,0 +1,1285 @@
+Adresser og definisjoner for DMJK Fjernstyring:       Oppdatert 14. november 2026 - ny signaldekoder kode med flere aspekt og nye adresser.
+
+Dekoderdefinisjoner:           Signal:           Veksel:     Sensor:                                                     Kommentar:
+                               OpenDCC           Lenz LS100  Littfinski RS-8/16-O
+Start Adresse (DCC eller RS):  OD-2 (DCC)        (DCC)       (RS)                                                        RS-16-O bruker 16 adresser
+Adresser/porter per dekoder:                                                                                             OD-2 bruker 4-24 adresser for 8-48 aspekt
+                                     513                 1         65
+                                      16                 4          8
+
+-----------------------------------------------------------------------------------------------------------------------
+Solberg (s):
+
+Signal / styrefunksjon:        Antall dekoder-adresser allokert: 10
+
+           ss27 FR             OD-2 s#: OD-2 port:           Aspekt #: DCC adr:                                          OD-2 dekoder oppsett:
+           ss27 FG                                                                                                       OpenDec2_23vXX_2f2b2f2f_16.csv
+           ss27 FY             1                 1-2         0           513
+           ss27 ----                                                                                                     NB: på Sigdal
+           ss28 IR             1                 1-2         1           513
+           ss28 IG
+           ss01 FR             1                 1-2         2           514
+           ss01 FG
+           ss01 FY             1                             3           514
+           ss01 ----
+           is13 FR             1                 3-4         4           515
+           is13 FG
+           is13 FY             1                 3-4         5           515
+           is13 ----
+            Ledig              1                 5-6         6           516
+            Ledig
+                               1                 5-6         7           516
+
+                               1                 5-6         8           517
+
+                               1                             9           517
+
+                               1                 7-8         10          518
+
+                               1                 7-8         11          518
+
+                               1                 7-8         12          519
+
+                               1                             13          519
+
+                               1                             14          520
+
+                               1                             15          520
+
+ss06 DR                        2                 D1          0           521                                             OpenDec2_41v01_4d3h2h2h1l_32.csv
+ss06 DG
+ss06 DY                        2                 D1          1           521
+ss06 DW
+ss05 DR                        2                 D1          2           522
+ss05 DG
+ss05 DY                        2                 D1          3           522
+ss05 DW
+ss07 DR                        2                 D2          4           523
+ss07 DG
+ss07 DY                        2                 D2          5           523
+ss07 DW
+ss26 DR                        2                 D2          6           524
+ss26 DG
+ss26 DY                        2                 D2          7           524
+ss26 DW
+ss23 HR                        2                 D3          8           525
+ss23 HG
+ss23 HY                        2                 D3          9           525
+ss23 ----
+ss22 HR                        2                 D3          10          526
+ss22 HG
+ss24 HR                        2                 D3          11          526
+ss24 HG
+Ledig LR                       2                 D4          12          527
+Ledig LG
+Ledig                          2                 D4          13          527
+Ledig
+Ledig                          2                 D4          14          528
+Ledig
+Ledig                          2                 D4          15          528
+Ledig
+                               2                 1-3         16          529
+
+                               2                 1-3         17          529
+
+                               2                 1-3         18          530
+
+                               2                             19          530
+
+                               2                 4-5         20          531
+
+                               2                 4-5         21          531
+
+                               2                 6-7         22          532
+
+                               2                 6-7         23          532
+
+                               2                 8           24          533
+
+                               2                 8           25          533
+
+                               2                             26          534
+
+                               2                             27          534
+
+                               2                             28          535
+
+                               2                             29          535
+
+                               2                             30          536
+
+                               2                             31          536
+
+ss09 DR                        3                 D1                   0  537                                             OpenDec2_42vXX_4d2h2h2h2h_32.csv
+ss09 DG                                                               1
+ss09 DY                        3                 D1                   2  537
+ss09 DW                                                               3
+ss10 DR                        3                 D1                   4  538
+ss10 DG                                                               5
+ss10 DY                        3                 D1                   6  538
+ss10 DW                                                               7
+                               3                 D2                      539
+                                                             Page 1
+                               3                 D2                      539
+
+                               3                 D2                      540
+
+                               3                 D2                      540
+Ledig DR   3  D3            8  541
+Ledig DG                    9  541
+Ledig DY   3  D3          10   542
+Ledig DW                  11   542
+ss08 DR    3  D3          12   543
+ss08 DG                   13   543
+ss08 DY    3  D3          14   544
+ss08 DW                   15   544
+ss25 HR    3  D4          16   545
+ss25 HG                   17   545
+Ledig HR   3  D4          18   546
+Ledig HG                  19   546
+Ledig HR   3  D4          20   547
+Ledig HG                  21   547
+Ledig HR   3  D4          22   548
+Ledig HG                  23   548
+           3  1-2
+ss11 DR                     0
+ss11 DG    3  1-2           1
+ss11 DY                     2
+ss11 DW    3  3-4           3
+ss12 DR                     4
+ss12 DG    3  3-4           5
+ss12 DY                     6
+ss12 DW    3  5-6           7
+ss13 DR                     8
+ss13 DG    3  5-6           9
+ss13 DY                   10
+ss13 DW    3  7-8         11
+ss15 DR                   12
+ss15 DG    3  7-8         13
+ss15 DY                   14
+ss15 DW    4  D1          15   549  OpenDec2_42vXX_4d2h2h2h2h_24.csv
+ss18 HR                   16
+ss18 HG    4  D1          17   549
+Ledig HR                  18
+Ledig HG   4  D1          19   550
+ss19 HR                   20
+ss19 HG    4  D1          21   550
+ss21 HR                   22
+ss21 HG    4  D2          23   551
+
+ss16 IR    4  D2            0  551
+ss16 IG                     1
+ss16 IY    4  D2            2  552
+ss16 ----                   3
+ss17 FR    4  D2            4  552
+ss17 FG                     5
+ss17 FY    4  D3            6  553
+ss17 ----                   7
+ss20 HR    4  D3            8  553
+ss20 HG                     9
+ss20 HY    4  D3          10   554
+ss20 ----                 11
+ss14 DR    4  D3          12   554
+ss14 DG                   13
+ss14 DY    4  D4          14   555
+ss14 DW                   15
+Ledig DR   4  D4          16   555
+Ledig DG                  17
+Ledig DY   4  D4          18   556
+Ledig DW                  19
+Ledig DR   4  D4          20   556
+Ledig DG                  21
+Ledig DY   4  1-2         22   557
+Ledig DW                  23
+Ledig DR   4  1-2         24   557
+Ledig DG                  25
+Ledig DY   4  3-4         26   558
+Ledig DW                  27
+Ledig      4  3-4         28   558
+
+           4  5-6  Page 2      559
+
+           4  5-6              559
+
+           4  7-8              560
+
+           4  7-8              560
+
+           5  1-5              561  OpenDec2_51vXX_5bf3h4d_32.csv
+
+           5  1-3              561
+
+           5  1-3              562
+
+           5                   562
+
+           5  4-5              563
+
+           5  4-5              563
+
+           5  4-5              564
+
+           5                   564
+
+           5  6-8              565
+
+           5  6-8              565
+
+           5  6-8              566
+
+           5                   566
+
+           5  D1               567
+
+           5  D1               567
+
+           5  D1               568
+
+           5  D1               568
+
+           5  D2               569
+
+           5  D2               569
+
+           5  D2               570
+
+           5  D2               570
+
+           5  D3               571
+
+           5  D3               571
+
+           5  D3               572
+
+           5  D3               572
+
+           5  D4               573
+
+           5  D4               573
+
+           5  D4               574
+
+           5  D4               574
+
+           5                   575
+Ledig              5                                 29                  575
+                                                                         576
+Ledig              5                                 30                  576
+
+Ledig              5                                 31                  577
+                                                                         577
+Ledig BR           6               1-3               0                   578   OpenDec2_36v1_3b3b2h.csv
+Ledig BG                                                                 578
+Ledig BY           6               1-3               1                   579   NB: på Sigdal
+Ledig ----                                                               579
+Ledig BR           6               1-3               2                   580   På g: Utkjørvelger, g -> m
+Ledig BG                                                                 580   På g: Utkjørvelger, g -> h
+Ledig BY           6                                 3                   581   På g: Signalkontroll, utkjør mot s
+Ledig ----                                                               581   På g: Togveikontroll, utkjør mot i/m
+ss30 UR            6               4-6               4                   582   Utkjørvelger bit 0 fra s mot g/i/m/h
+ss30 UG                                                                  582   Utkjørvelger bit 1: 0=g, 1=i, 2=m, 3=h
+Ledig              6               4-6               5                   583   Signalkontroll, utkjør mot i/r
+Ledig                                                                    583   Signalkontroll, innkjør fra i/r
+Ledig              6               4-6               6                   584   Signalkontroll, innkjør fra k
+Ledig                                                                    584   Togveikontroll, utkjør mot g/i/m/h
+Ledig              6                                 7
+Ledig                                                           8
+                   6               7-8               8            DCC adr:
+                                                                            1
+                   6               7-8               9                      2
+                                                                            3
+                   6                                 10                     4
+
+                   6                                 11                     5
+                                                                            6
+                   6                                 12                     7
+                                                                            8
+                   6                                 13
+                                                                            9
+                   6                                 14                    10
+                                                                           11
+                   6                                 15                    12
+
+Veksel:            Antall dekoder-adresser allokert:            8
+                                                                  Sensor adr:
+           sv01    LS100 s#:       LS100 port: RS adr:                   512
+           sv02                                                          513
+           sv03    1                    1            1                   514
+           sv04                                                          515
+                   1                    2            1                   516
+                                                                         517
+                   1                    3            1                   518
+                                                                         519
+                   1                    4            1
+                                                                         520
+sv05               2                    1            2                   521
+                                                                         522
+sv07               2                    2            2                   523
+                                                                         524
+sv08               2                    3            2                   525
+                                                                         526
+sv09               2                    4            2                   527
+
+sv10               3                    1            3                   528
+sv11, sv12                                                               529
+sv13, sv14         3                    2            3                   530
+sv15                                                                     531
+                   3                    3            3                   532
+                                                                         533
+                   3                    4            3                   534
+                                                                         535
+Detektor:                 Antall  detektor-adresser  allokert:           536
+                   RS-8(16) s#:       RS-8 port:      RS adr:            537
+           sd01                               1                          538
+           sd02             1                 2             65           539
+            Ledig           1                 3             65
+           id09             1                 4             65
+           sd20             1                 5             65
+            Ledig           1                 6             65
+            Ledig           1                 7             65
+            Ledig           1                 8             65
+                            1                               65
+
+sd09               2                    1            66
+
+sd10               2                    2            66
+
+sd11               2                    3            66
+
+sd12               2                    4            66
+
+sd13               2                    5            66
+
+sd14               2                    6            66
+
+sd15               2                    7            66
+
+sd16               2                    8            66
+
+RS-16-O, bruker 2 x RS-8 adresser
+
+Ledig              3                    1            67
+
+Ledig              3                    2            67
+
+gd10 g->m          3                    3            67
+
+gd11 g->h          3                    4            67
+
+gd08 ut s          3                    5            67
+
+gd09 ut i/m        3                    6            67
+
+sd18 s bit0        3                    7            67
+
+sd19 s bit1        3                    8            67
+
+sd05 ut i/r        3                    9            67
+
+sd06 inn i/r       3                    10           67
+
+sd07 inn g/k       3                    11           67
+
+sd08 ut g/i/m/h    3                    12           67
+
+                                            Page 3
+sd21 ut H0m              3       13           67               540                                                       Signalkontroll, utkjør over sx fra H0m Solberg
+Ledig                                                                                                                    OD-2 dekoder oppsett:
+Ledig                    3       14           67               541                                                       OpenDec2_43vXX_4d2h2f_24.csv
+Ledig
+                         3       15           67               542                                                       OpenDec2_44vXX_4d3b2f2h1l_32.csv
+
+                         3       16           67               543                                                       g pending LED (blå) på stillverk
+
+-----------------------------------------------------------------------------------------------------------------------
+Solberg Skiftegård (g):
+
+Signal / styrefunksjon:  Antall dekoder-adresser allokert: 10
+
+           gs04 DR       OD-2 g#: OD-2 port:  Aspekt #: DCC adr:
+           gs04 DG
+           gs04 DY       1  D1                0                673
+           gs04 DW
+           gs05 DR       1  D1                1                673
+           gs05 DG
+           gs05 DY       1  D1                2                674
+           gs05 DW
+           gs06 DR       1  D1                3                674
+           gs06 DG
+           gs06 DY       1  D2                4                675
+           gs06 DW
+           gs07 DR       1  D2                5                675
+           gs07 DG
+           gs07 DY       1  D2                6                676
+           gs07 DW
+           gs03 UR       1  D2                7                676
+           gs03 UG
+           ss29 FR       1  D3                8                677
+           ss29 FG
+           ss29 FY       1  D3                9                677
+           ss29 ----
+            Ledig        1  D3                10               678
+            Ledig
+                         1  D3                11               678
+
+                         1  D4                12               679
+
+                         1  D4                13               679
+
+                         1  D4                14               680
+
+                         1  D4                15               680
+
+                         1  1-2               16               681
+
+                         1  1-2               17               681
+
+                         1  3-4               18               682
+
+                         1  3-4               19               682
+
+                         1  3-4               20               683
+
+                         1                    21               683
+
+                         1                    22               684
+
+                         1                    23               684
+
+gs08 DR                  2  D1                0                685
+gs08 DG
+gs08 DY                  2  D1                1                685
+gs08 DW
+gs09 DR                  2  D1                2                686
+gs09 DG
+gs09 DY                  2  D1                3                686
+gs09 DW
+Ledig DR                 2  D2                4                687
+Ledig DG
+Ledig DY                 2  D2                5                687
+Ledig DW
+gs10 DR                  2  D2                6                688
+gs10 DG
+gs10 DY                  2  D2                7                688
+gs10 DW
+gs02 BR                  2  D3                8                689
+gs02 BG
+gs02 BY                  2  D3                9                689
+gs02 ----
+gs01 FR                  2  D3                10               690
+gs01 FG
+gs01 FY                  2  D3                11               690
+gs01 ----
+gs11 UR                  2  D4                12               691
+gs11 UG
+koRTgpR                  2  D4                13               691
+koRTgpG
+Ledig                    2  D4                14               692
+Ledig
+Ledig                    2  D4                15               692
+Ledig
+                         2  1-3               16               693
+
+                         2  1-3               17               693
+
+                         2  1-3               18               694
+
+                         2                    19               694
+
+                         2  4-5               20               695
+
+                         2  4-5               21               695
+
+                         2  4-5               22               696
+
+                         2                    23               696
+
+                         2  6-7               24               697
+
+                         2  6-7               25               697
+
+                         2  8                 26               698
+
+                         2  8                 27               698
+
+                         2                    28               699
+
+                         2                    29               699
+
+                         2                    30               700
+
+                         2                    31               700
+
+Veksel:                  Antall dekoder-adresser allokert:  8
+           gv01                                               DCC adr:
+                         LS100 g#: LS100 port: RS adr:                 33
+
+                         1       1            9
+
+                                              Page 4
+gv02                           1            2             9          34
+gv03
+gv04                           1            3             9          35
+
+                               1            4             9          36
+
+gv05                           2            1             10         37
+gv06
+Ledig                          2            2             10         38
+sv06
+                               2            3             10         39
+
+                               2            4             10         40                                                  NB: på Solberg
+
+Detektor:                RS-8  Antall  detektor-adresser  allokert:  8                                                   NB: på Solberg
+           gd01                g#:         RS-8 port:      RS adr:     Sensor adr:                                       OD-2 dekoder oppsett:
+           gd02                                    1                          576                                        OpenDec2_32vX_3b3b2b.csv
+           gd03                  1                 2             73           577
+           gd04                  1                 3             73           578                                        h pending LED (blå) på havna stillverk
+           gd05                  1                 4             73           579                                        Velger for k-Lokalstyrt/Fjernstyrt
+           gd06                  1                 5             73           580
+           gd07                  1                 6             73           581                                        OD-2 dekoder oppsett:
+           sd17                  1                 7             73           582                                        OpenDec2_53vX_5bf2f1l_8.csv
+                                 1                 8             73           583
+                                 1                               73
+
+-----------------------------------------------------------------------------------------------------------------------
+Kobbarvik (k):
+
+Signal / styrefunksjon:        Antall dekoder-adresser allokert:     6
+                                                                       DCC adr:
+           ks01 IR       OD-2 k#: OD-2 port:              Aspekt #:           833
+           ks01 IG                                                            833
+           ks01 IY             1       1-3                0                   834
+           ks01 ----                                                          834
+           ks03 IR             1       1-3                1                   835
+           ks03 IG                                                            835
+           ks03 IY             1       1-3                2                   836
+           ks03 ----                                                          836
+           ks02 IR             1       1-3                3                   837
+           ks02 IG                                                            837
+           Blank All           1       4-6                4                   840
+
+                               1       4-6                5
+
+                               1       4-6                6
+
+                               1       4-6                7
+
+                               1       7-8                8
+
+                               1       7-8                9
+
+                               1       1-8                15
+
+Veksel:                        Antall dekoder-adresser allokert:     4
+                                                                       DCC adr:
+           kv01, kv02    LS100 k#: LS100 port: RS adr:                          65
+           kv03                                                                 66
+           kv04, kv05          1            1             17                    67
+           kv07                                                                 68
+                               1            2             17
+
+                               1            3             17
+
+                               1            4             17
+
+kv06                           2            1             18         69
+Ledig
+koRThp                         2            2             18         70
+koLF
+                               2            3             18         71
+
+                               2            4             18         72
+
+Detektor:                RS-8  Antall  detektor-adresser  allokert:  4
+                               k#:         RS-8 port:      RS adr:     Sensor adr:
+           kd01                                    1                          640
+           kd02                  1                 2             81           641
+           kd03                  1                 3             81           642
+           kd04                  1                 4             81           643
+           kd05                  1                 5             81           644
+           kd06                  1                 6             81           645
+           kd07                  1                 7             81           646
+           kd08                  1                 8             81           647
+                                 1                               81
+
+-----------------------------------------------------------------------------------------------------------------------
+Mjøndalen (m):
+
+Signal / styrefunksjon:        Antall dekoder-adresser allokert:     8
+                                                                       DCC adr:
+           ms03 IR       OD-2 m#: OD-2 port:              Aspekt #:           929
+           ms03 IG                                                            929
+           ms03 IY             1       1-5                0                   930
+           ms03 ----                                                          930
+           ms02 FR             1       1-3                1                   931
+           ms02 FG                                                            931
+                               1       1-3                2
+
+                               1       1-3                3
+
+                               1       4-5                4
+
+                               1       4-5                5
+
+                                               Page 5
+           ms02 FY     1  4-5     6                                 932
+           ms02 ----                                                932
+           ms01 FR     1  4-5     7                                 933
+           ms01 FG                                                  933
+           ms01 FY     1  6-7     8                                 934
+           ms01 ----                                                934
+           ms05 LR     1  6-7     9                                 935
+           ms05 LG                                                  935
+           Blank All   1  6-7     10                                936
+
+           ms04 UR     1  6-7     11                                945
+           ms04 UG                                                  945
+           ms04 UY     1  8       12                                946
+           ms04 ----                                                946
+           ms06 LR     1  8       13                                947
+           ms06 LG                                                  947
+           ms07 LR     1  1-8     15                                948
+           ms07 LG                                                  948
+           ms08 LR     2  1-3     0                                 949   OpenDec2_33vX_3h3x1l.csv
+           ms08 LG                                                  949   OpenDec2_33vX_3h3x1l.csv
+            Ledig      2  1-3     1                                       OpenDec2_53vX_5bf2f1l_8.csv
+           Blank All                                                952
+                       2  1-3     2
+           ms13 UR                                                  961
+           ms13 UG     2  1-3     3                                 961
+           ms13 UY                                                  962
+           ms13 ----   2  4       4                                 962
+           ms09 LR                                                  963
+           ms09 LG     2  4       5                                 963
+           ms10 LR                                                  964
+           ms10 LG     2  5       6                                 964
+           ms11 LR                                                  965
+           ms11 LG     2  5       7                                 965
+            Ledig
+           Blank All   2  6       8                                 968
+
+           ms14 IR     2  6       9                                 977
+           ms14 IG                                                  977
+           ms14 IY     2  7-8                                       978
+           ms14 ----                                                978
+           ms15 FR     2  1-8     15                                979
+           ms15 FG                                                  979
+           ms15 FY     3  1-3     0                                 980
+           ms15 ----                                                980
+           ms16 FR     3  1-3     1                                 981
+           ms16 FG                                                  981
+           ms16 FY     3  1-3     2                                 982
+           ms16 ----                                                982
+           ms12 LR     3  1-3     3                                 983
+           ms12 LG                                                  983
+           Blank All   3  4       4                                 984
+
+Veksel:                3  4       5                        4
+                                                             DCC adr:
+           mv01, mv02  3  5       6                                   81
+           mv03                                                       82
+           mv04        3  5       7                                   83
+           mv06                                                       84
+                       3  6       8
+           mv08                                                       85
+           mv11        3  6       9                                   86
+           mv12, mv13                                                 87
+           mv14        3  7-8                                         88
+
+Detektor:              3  1-8     15                       8
+                                                             Sensor adr:
+           md01        4  1-5     0                                 672
+           md02                                                     673
+           md03        4  1-3     1                                 674
+           md04                                                     675
+           md05        4  1-3     2                                 676
+
+                       4  1-3     3
+
+                       4  4-5     4
+
+                       4  4-5     5
+
+                       4  4-5     6
+
+                       4  4-5     7
+
+                       4  6-7     8
+
+                       4  6-7     9
+
+                       4  6-7     10
+
+                       4  6-7     11
+
+                       4  8       12
+
+                       4  8       13
+
+                       4  1-8     15
+
+                       Antall dekoder-adresser allokert:
+
+                       LS100 m#: LS100 port: RS adr:
+
+                       1       1  21
+
+                       1       2  21
+
+                       1       3  21
+
+                       1       4  21
+
+                       2       1  22
+
+                       2       2  22
+
+                       2       3  22
+
+                       2       4  22
+
+                       Antall detektor-adresser allokert:
+
+                       RS-8(16) m#: RS-8 port: RS adr:
+
+                       1       1  85
+
+                       1       2  85
+
+                       1       3  85
+
+                       1       4  85
+
+                       1       5  85
+
+                                  Page 6
+md06                     1              6     85                        677
+md07
+md08                     1              7     85                        678
+
+                         1              8     85                        679
+
+RS-16-O, bruker 2 x RS-8 adresser
+
+md09 ut g/s              2              1     86                        680                                              Togveikontroll, utkjør mot g/s
+                                                                                                                         Signalkontroll, innkjør fra k
+md10 inn k               2              2     86                        681                                              Signalkontroll, innkjør fra y
+                                                                                                                         Signalkontroll, utkjør mot y
+md11 inn y               2              3     86                        682                                              Signalkontroll, skifting på/av
+                                                                                                                         Utkjørvelger, mot g
+md12 ut y                2              4     86                        683                                              På havna, utkjørvelger mot g
+                                                                                                                         På havna, togveikontroll utkjør mot s/g
+md13 skift               2              5     86                        684                                              Planovergang på Mjøndalen
+                                                                                                                         Planovergang på Myra
+md14 mot g               2              6     86                        685
+                                                                                                                         OD-2 dekoder oppsett:
+hd02 mot g               2              7     86                        686                                              OpenDec2_32vX_3b3b2b.csv
+
+hd03 ut g/s              2              8     86                        687                                              2 grønne lys på 3-lys signal
+
+moP1                     2              9     86                        688                                              OpenDec2_32vX_3b3b2b.csv
+
+yoP1                     2              10    86                        689                                              På Mjøndalen
+
+Ledig                    2              11    86                        690
+
+Ledig                    2              12    86                        691
+
+Ledig                    2              13    86                        692
+
+Ledig                    2              14    86                        693
+
+Ledig                    2              15    86                        694
+
+Ledig                    2              16    86                        695
+
+-----------------------------------------------------------------------------------------------------------------------
+Myra (y):
+
+Signal / styrefunksjon:  Antall dekoder-adresser allokert:  6
+                                                              DCC adr:
+           ys01 BR       OD-2 y#: OD-2 port:  Aspekt #:              985
+           ys01 BG                                                   985
+           ys01 BY       1         1-3        0                      986
+           ys01 ----                                                 986
+           ys04 BR       1         1-3        1                      987
+           ys04 BG                                                   987
+           ys04 BY       1         1-3        2                      988
+           ys04 ----                                                 988
+           ys06 BR       1         1-3        3                      989
+           ys06 BG                                                   989
+                         1         4-6        4                      990
+           Blank All                                                 990
+                         1         4-6        5                      991
+                                                                     991
+                         1         4-6        6                      992
+                                                                     992
+                         1         4-6        7
+
+                         1         7-8        8
+
+                         1         7-8        9
+
+                                              10
+
+                                              11
+
+                                              12
+
+                                              13
+
+                                              14
+
+                         1         1-8        15
+
+ys05 BR                  2         1-3        0                         993
+ys05 BG
+ys05 BY                  2         1-3        1                         993
+ys05 ----
+ys02 BR                  2         1-3        2                         994
+ys02 BG
+ys02 BY                  2         1-3        3                         994
+ys02 ----
+ys07 BR                  2         4-6        4                         995
+ys07 BG
+                         2         4-6        5                         995
+Blank All
+                         2         4-6        6                         996
+
+                         2         4-6        7                         996
+
+                         2         7-8        8                         997
+
+                         2         7-8        9                         997
+
+                                              10                        998
+
+                                              11                        998
+
+                                              12                        999
+
+                                              13                        999
+
+                                              14                        1000
+
+                         2         1-8        15                        1000
+
+                         Planovergang dekodere, bruker 1 adresse hver:
+
+yoP1 On                  3         1          0                         1017
+yoP1 Off
+moP1 On                  3         1          1                         1017
+moP1 Off
+                         3         1          2                         1018
+
+                         3         1          3                         1018
+
+Veksel:                  Antall dekoder-adresser allokert:  4
+                                                              DCC adr:
+            Ledig        LS100 y#: LS100 port: RS adr:                 97
+            Ledig                                                      98
+                         1              1     25
+
+                         1              2     25
+
+                                              Page 7
+yv01                           1            3             25         99
+yv02
+                               1            4             25         100
+
+yv03                           2            1             26         101
+yv04
+yv05                           2            2             26         102
+yv06, yv07
+                               2            3             26         103
+
+                               2            4             26         104
+
+yv08                           3            1             27         105
+yv09
+Ledig                          3            2             27         106
+Ledig
+                               3            3             27         107
+
+                               3            4             27         108
+
+Detektor:                RS-8  Antall  detektor-adresser  allokert:  4
+                               y#:         RS-8 port:      RS adr:     Sensor adr:
+           yd01                                    1                          736
+           yd02                  1                 2             93           737
+           yd03                  1                 3             93           738
+           yd04                  1                 4             93           739
+           yd05                  1                 5             93           740
+           yd06                  1                 6             93           741
+           yd07                  1                 7             93           742
+           yd08                  1                 8             93           743
+                                 1                               93
+
+-----------------------------------------------------------------------------------------------------------------------
+Sigdal (i):
+
+Signal / styrefunksjon:        Antall dekoder-adresser allokert:     8
+                                                                       DCC adr:
+           is01 IR       OD-2 i#: OD-2 port:              Aspekt #:          1001                                        OD-2 dekoder oppsett:
+           si01 IG                                                           1001                                        OpenDec2_52vX_5bf3b_8.csv
+           is01 IY             1       1-5                0                  1002
+           is01 ----                                                         1002
+           is02 FR             1       1-3                1                  1003
+           is02 FG                                                           1003
+           is02 FY             1       1-3                2                  1004
+           is02 ----                                                         1004
+           is03 IR             1                          3                  1005
+           is03 IG                                                           1005
+           is03 IY             1       4-5                4                  1006
+
+                               1       4-5                5
+
+                               1       4-5                6
+
+                               1                          7
+
+                               1       6-8                8
+
+                               1       6-8                9
+
+                               1       6-8                10
+
+Veksel:                        Antall dekoder-adresser allokert:     8
+                                                                       DCC adr:
+           iv01, iv02    LS100 i#:     LS100 port: RS adr:                    113
+            Ledig                                                             114
+           iv04                1            1             29                  115
+           iv05                                                               116
+                               1            2             29
+
+                               1            3             29
+
+                               1            4             29
+
+iv06                           2            1             30         117
+
+iv07                           2            2             30         118
+
+iv08                           2            3             30         119
+
+iv09                           2            4             30         120
+
+iv10                           3            1             31         121
+
+iv11                           3            2             31         122
+
+iv12                           3            3             31         123
+
+iv13                           3            4             31         124
+
+iv14, iv15                     4            1             32         125
+iv16, iv17
+iv18                           4            2             32         126
+iv19
+                               4            3             32         127
+
+                               4            4             32         128
+
+iv20                           5            1             33         129
+
+iv21                           5            2             33         130
+
+iv22                           5            3             33         131
+
+iv23                           5            4             33         132
+
+iv24                           6            1             34         133
+
+iv25                           6            2             34         134
+
+iv26                           6            3             34         135
+
+                                               Page 8
+iv27                     6                 4               34         136
+
+Detektor:                       Antall  detektor-adresser  allokert:  8
+                         RS-8/16 i#:        RS-8 port:      RS adr:     Sensor adr:
+           id01                                     1                          768
+           id02                   1                 2             97           769
+           id03                   1                 3             97           770
+           id04                   1                 4             97           771
+           id12                   1                 5             97           772
+           id13                   1                 6             97           773
+           id14                   1                 7             97           774
+           id15                   1                 8             97           775
+                                  1                               97
+
+id05                     2                 1               98         776                                                Plassert i Verksted
+id06
+id07                     2                 2               98         777                                                Togveikontroll, utkjør mot y/m/n/s/g
+id08                                                                                                                     Signalkontroll, innkjør fra y
+id10                     2                 3               98         778                                                Signalkontroll, innkjør fra s
+id11                                                                                                                     Signalkontroll, utkjør mot s
+Ledig                    2                 4               98         779                                                Utkjørvelger, mot g
+Ledig                                                                                                                    Utkjørvelger, mot n
+                         2                 5               98         780
+                                                                                                                         Togvei-brytere (testoppsett)
+                         2                 6               98         781
+                                                                                                                         OD-2 dekoder oppsett:
+                         2                 7               98         782                                                ?
+
+                         2                 8               98         783
+
+RS-16-O, bruker 2 x RS-8 adresser
+
+id16 ut y                3                 1               99         784
+
+id17 inn y               3                 2               99         785
+
+id18 inn s               3                 3               99         786
+
+id19 ut s                3                 4               99         787
+
+id20 mot g               3                 5               99         788
+
+id21 mot n               3                 6               99         789
+
+Ledig                    3                 7               99         790
+
+Ledig                    3                 8               99         791
+
+Ledig                    3                 9               99         792
+
+Ledig                    3                 10              99         793
+
+Ledig                    3                 11              99         794
+
+Ledig                    3                 12              99         795
+
+Ledig                    3                 13              99         796
+
+Ledig                    3                 14              99         797
+
+Ledig                    3                 15              99         798
+
+Ledig                    3                 16              99         799
+
+RS-16-O, bruker 2 x RS-8 adresser
+
+ib11                     5                 1               101        800
+
+ib12                     5                 2               101        801
+
+ib13                     5                 3               101        802
+
+ib14                     5                 4               101        803
+
+ib15                     5                 5               101        804
+
+ib16                     5                 6               101        805
+
+ib17                     5                 7               101        806
+
+ib18                     5                 8               101        807
+
+ib19                     5                 9               101        808
+
+ib20                     5                 10              101        809
+
+ib21                     5                 11              101        810
+
+Ledig                    5                 12              101        811
+
+Ledig                    5                 13              101        812
+
+Ledig                    5                 14              101        813
+
+Ledig                    5                 15              101        814
+
+Ledig                    5                 16              101        815
+
+-----------------------------------------------------------------------------------------------------------------------
+Norbotten (n):
+
+Signal / styrefunksjon:  Antall dekoder-adresser allokert:            4
+                                                                        DCC adr:
+            Ledig        OD-2 n#: OD-2 port:               Aspekt #:    --
+            Ledig                                                       --
+                         1              -                  0
+
+                         1              -                  1
+
+Veksel:                  Antall dekoder-adresser allokert:            8
+                                                                        DCC adr:
+           nv01          LS100 n#: LS100 port: RS adr:                         145
+           nv02                                                                146
+           nv03          1                 1               37                  147
+
+                         1                 2               37
+
+                         1                 3               37
+
+                                               Page 9
+nv04                                        1       4                  37         148
+
+nv05                                        2       1                  38         149
+nv06
+nv07                                        2       2                  38         150
+Ledig
+                                            2       3                  38         151
+
+                                            2       4                  38         152
+
+nv08                                        3       1                  39         153
+nv09
+nv10                                        3       2                  39         154
+nv11
+                                            3       3                  39         155
+
+                                            3       4                  39         156
+
+nv12                                        4       1                  40         157
+nv13
+nv14                                        4       2                  40         158
+nv15
+                                            4       3                  40         159
+
+                                            4       4                  40         160
+
+Detektor:                             RS-8  Antall  detektor-adresser  allokert:  8
+           nd01                             n#:         RS-8 port:      RS adr:     Sensor adr:
+           nd02                                                 1                          832
+           nd03                               1                 2           105            833
+           nd04                               1                 3           105            834
+           nd05                               1                 4           105            835
+           nd06                               1                 5           105            836
+           nd07                               1                 6           105            837
+           nd08                               1                 7           105            838
+                                              1                 8           105            839
+                                              1                             105
+
+nd09                                        2       1                  106        840
+nd10
+nd11                                        2       2                  106        841
+nd12
+nd13                                        2       3                  106        842
+nd14
+nd15                                        2       4                  106        843
+nd16
+                                            2       5                  106        844
+
+                                            2       6                  106        845
+
+                                            2       7                  106        846
+
+                                            2       8                  106        847
+
+nd17                                        3       1                  107        848
+nd18
+nd19                                        3       2                  107        849
+nd20
+kd09                                        3       3                  107        850
+hd01
+Ledig                                       3       4                  107        851
+Ledig
+                                            3       5                  107        852                                    På havna
+                                                                                                                         På havna
+                                            3       6                  107        853
+                                                                                                                         Vendesløyfe
+                                            3       7                  107        854                                    Vendesløyfe
+                                                                                                                         Vendesløyfe
+                                            3       8                  107        855                                    Vendesløyfe
+
+nd21                                        4       1                  108        856
+nd22
+-                                           4       2                  108        857
+-
+nd23                                        4       3                  108        858
+nd24
+nd25                                        4       4                  108        859
+Ledig
+                                            4       5                  108        860
+
+                                            4       6                  108        861
+
+                                            4       7                  108        862
+
+                                            4       8                  108        863
+
+-----------------------------------------------------------------------------------------------------------------------
+Havna (h): Havna har ingen egne dekodere - bruker ledige porter på nærliggende dekodere
+
+Signaloppsett:                        Signalbilder:
+            Forkortelser for signal:  Antall lys i signalet / antall signal for dvergsignal
+            n: tall foran signaltype  Rød / 1 Grønn / 2 Grønne
+            H : Hovedsignal           Rød / 1 Grønn / 2 Grønne (samme som hovedsignal)
+            U : Utkjør Hovedsignal    Rød blink / 1 Grønn / 2 Grønne
+            B : Blokksignal           Rød blink / 1 Grønn / 2 Grønne (samme som blokksignal b)
+            I : Innkjør Hovedsignal   Orange blink / Orange-Grønn blink / Grønn blink
+            F : Forsignal             Stop (Rød) / Kjør (Grønn) / Stopper (Y-Gul) / Lokal (W-Hvit)
+            D : Dvergsignal           Lys Av / På (skiftesignal, sporsignal etc.)
+            L : Lys R/G - Av/På       Av / Rød / Rød blink / Orange blink / Dverg: "Skifting forbudt" (nedre høyre+venstre lys)
+            R : "Red"                 På / 2 Grønne / Grønn blink / Dverg: "Skifting tillatt" (øvre+nedre venstre lys)
+            G : "Green"
+                                                                         Page 10
+Y : "Yellow"                1 Grønn / Orange-Grønn blink / Dverg: "Varsom Skifting Tillatt" (nedre venstre+øvre høyre lys)
+W : "White"                 Dvergsignal: "Frigitt for lokal skifting" (øvre høyre lys)
+
+Dvergsignal kontroll koder (fjernes etterhvert):
+
+Dm0[x]                      Modus 0: Normal drift
+
+Dm1[x]                      Modus 1: Hovedsignal Rødt
+
+Dm2[x]                      Modus 2: Hovedsignal Rødt, Dvergsignal i "Lokal Skifting" (øvre høyre lys på)
+
+Ds[x]                       Sett Stopper (Gul) for all dverger som er i Kjør (Grønn) (brukes i tilfelle aspekt > 16)
+
+[x] = 1-n i tilfelle det er flere kommandoer som håndterer hver sine signal
+
+Signaldekoderne konfigureres med en CV konfigurasjonsfil med navn OpenDec2_NNvVV_SS...S_AA.csv
+der: NN = konfigurasjon ID nummer (CV 530)
+
+           VV = konfigurasjon Versjon (CV 531).
+           SS...S = forkortet beskrivelse for signaltyper i konfigurasjonen
+           AA = antall aspekt brukt i konfigurasjonen (CV 553) - det er 2 aspekt per adresse. >16 aspekt krever program versjon 14+ (CV 7)
+
+Kofigurasjonsfilen er en .csv fil med 2 parametere per linje: CVnummer, Verdi (desimaltall) fulgt av valgfri beskrivelse (uten komma  mellom)
+
+Kofigurasjonsfilen laget for bruk med programmeringsfunksjonen i Rocrail, men andre programmerere kan sikkert også brukes.
+
+Kofigurasjonsfilen starter typisk med filnummer og versjon, slik:
+
+530, 24 Config file number
+
+531, 3 Config version 20260118
+
+Deretter følger et antall CVer som definerer standard dekoderoppsett for DMJK. Eneste CV som varierer er CV 553 NoOfAspects
+
+som definerer hvor mange aspekt dekoderen håndterer. Lovlige verdier er: 8, 16, 24, 32 og 48 (som krever 4-24 adresser)
+
+553, 32 NoOfAspects: 8-48 in increments of 8 (4-24 addresses)
+
+Etter standard oppsettblokken følger antall aspekter som er definert:
+
+565, 3 Aspect 0: U1 Red         Bitmønster som definer hvilke utganger som skal styres
+
+566, 1 Pattern                  Bitmønster som definer på/av tilstand for utgangene
+
+567, 0 Blink                    Bitmønster som definer hvilke utganger som skal blinke
+
+716, 0 Dwarf                    Bitmønster som definer på/av tilstand for lysene i dvergsignal
+
+Dvergsignal bitmønster: bit 0-3 velger dverg 1-4, bit 4 er øvre høyre lys, 5 er nedre høyre, 6 er nedre venstre og 7 er øvre venstre
+
+Standard dvergsignal aspekt er Red, Green, Yellow (nedre venstre og øvre høyre) og White (øvre høyre)
+
+Etter siste vanlige aspekt kommer et tilsvarende oppstart/reset aspekt i CV 712, 713, 714 og 747.
+
+Til sist kommer:
+
+715, 0 NoDimmMask               Bitmønster som definer hvilke utganger som ikke skal dimmes, typisk brukt for rele
+
+520, 13 Reset decoder           Reset kommando som gjør at dekoderen tar i bruk den nye konfigurasjonen umiddelbart
+
+Dekoderen har 5-lys logikk som slukker forsignalet ved rødt hovedsignal på utgang 1-5: trigges når CV 565 = 31 og CV 568 = 7
+
+                                                       Page 11
+

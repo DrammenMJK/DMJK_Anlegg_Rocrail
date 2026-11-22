@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Trace file issues</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+white-space: pre-wrap;
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Trace file issues</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#rocrail003trc" id="toc-rocrail003trc">rocrail.003.trc</a>
+<ul>
+<li><a href="#route-not-locked" id="toc-route-not-locked">Route not
+locked</a></li>
+<li><a href="#output-without-address" id="toc-output-without-address">Output without address</a></li>
+<li><a href="#connection-problem" id="toc-connection-problem">Connection
+problem</a></li>
+<li><a href="#unregistered-sensor-address-not-in-plan" id="toc-unregistered-sensor-address-not-in-plan">Unregistered sensor
+(address not in plan)</a></li>
+</ul></li>
+<li><a href="#rocview002trc" id="toc-rocview002trc">rocview.002.trc</a>
+<ul>
+<li><a href="#manual-signal-change-by-operator" id="toc-manual-signal-change-by-operator">Manual signal change by
+operator</a></li>
+<li><a href="#manual-sensor-change-by-operator" id="toc-manual-sensor-change-by-operator">Manual sensor change by
+operator</a></li>
+<li><a href="#manual-output-change-by-operator" id="toc-manual-output-change-by-operator">Manual output change by
+operator</a></li>
+<li><a href="#warning" id="toc-warning">Warning</a></li>
+<li><a href="#connection-problem-1" id="toc-connection-problem-1">Connection problem</a></li>
+</ul></li>
+<li><a href="#interpretation" id="toc-interpretation">Interpretation</a></li>
+</ul>
+</nav>
+<h1 id="rocrail003trc">rocrail.003.trc</h1>
+<h2 id="route-not-locked">Route not locked</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-ms is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-mg is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-gi is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-gm is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-gh is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-si is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-sm is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-sh is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-is is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-ig is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-hs is not locked</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:09</td>
+<td><code>ORoute: route krt-hg is not locked</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="output-without-address">Output without address</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">12</td>
+<td>2026-11-19 23:24:58</td>
+<td>2026-11-19 23:25:10</td>
+<td><code>OOutput: Output [krt-busy] has no address set; Skip command.</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">11</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:25:10</td>
+<td><code>OOutput: Output [koCtl] has no address set; Skip command.</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="connection-problem">Connection problem</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>OSocket: *broken* errno=0, rc=10054, read=-1</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="unregistered-sensor-address-not-in-plan">Unregistered sensor
+(address not in plan)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:25:01</td>
+<td><code>OModel: unregistered sensor event: [xpr] 0:792 uidname=[]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:25:01</td>
+<td><code>OModel: unregistered sensor event: [xpr] 0:793 uidname=[]</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="rocview002trc">rocview.002.trc</h1>
+<h2 id="manual-signal-change-by-operator">Manual signal change by
+operator</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">4</td>
+<td>2026-11-19 22:30:16</td>
+<td>2026-11-19 22:30:33</td>
+<td><code>app: sendToRocrail( &lt;sg id=&quot;is09&quot; cmd=&quot;flip&quot; aspect=&quot;-1&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>2026-11-19 23:09:01</td>
+<td>2026-11-19 23:09:04</td>
+<td><code>app: sendToRocrail( &lt;sg id=&quot;ys01&quot; cmd=&quot;flip&quot; aspect=&quot;-1&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:17:46</td>
+<td>2026-11-19 23:17:46</td>
+<td><code>app: sendToRocrail( &lt;sg id=&quot;is10&quot; cmd=&quot;flip&quot; aspect=&quot;-1&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="manual-sensor-change-by-operator">Manual sensor change by
+operator</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2026-11-19 23:08:44</td>
+<td>2026-11-19 23:21:51</td>
+<td><code>app: sendToRocrail( &lt;fb id=&quot;id16&quot; state=&quot;true&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>2026-11-19 23:08:58</td>
+<td>2026-11-19 23:21:57</td>
+<td><code>app: sendToRocrail( &lt;fb id=&quot;id16&quot; state=&quot;false&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:14:29</td>
+<td>2026-11-19 23:14:29</td>
+<td><code>app: sendToRocrail( &lt;fb id=&quot;id20&quot; state=&quot;false&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:21:54</td>
+<td>2026-11-19 23:21:54</td>
+<td><code>app: sendToRocrail( &lt;fb id=&quot;id17&quot; state=&quot;true&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:21:56</td>
+<td>2026-11-19 23:21:56</td>
+<td><code>app: sendToRocrail( &lt;fb id=&quot;id17&quot; state=&quot;false&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;/&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="manual-output-change-by-operator">Manual output change by
+operator</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:17:04</td>
+<td>2026-11-19 23:17:04</td>
+<td><code>app: sendToRocrail( &lt;co id=&quot;koRTip&quot; value=&quot;0&quot; cmd=&quot;flip&quot; controlcode=&quot;&quot; slavecode=&quot;&quot;&gt;</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="warning">Warning</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>app: Exit</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: remove throttles from New...</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: model=271E1A14</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: lclist=2A8EAEB4</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: check 3 locos for throttles</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: throttle position: none found for [IC232]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: throttle position: none found for [GP60]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>frame: throttle position: none found for [Nohab]</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:25:01</td>
+<td>2026-11-19 23:25:01</td>
+<td><code>app: Exit already in progress...</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="connection-problem-1">Connection problem</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">Count</th>
+<th>First</th>
+<th>Last</th>
+<th>Message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>ORCon: disconnect from server</code></td>
+</tr>
+<tr>
+<td style="text-align: right;">1</td>
+<td>2026-11-19 23:24:59</td>
+<td>2026-11-19 23:24:59</td>
+<td><code>ORCon: server info reader ended</code></td>
+</tr>
+</tbody>
+</table>
+<h1 id="interpretation">Interpretation</h1>
+<p>This section was written by hand. Running <code>trc_issues.py</code>
+again overwrites the file, so copy this section first.</p>
+<ol type="1">
+<li><strong>Coverage.</strong> <code>rocrail.003.trc</code> covers only
+12 seconds (23:24:58 to 23:25:10), when the session was shut down. The
+Rocrail server traces for the rest of the session aren&#39;t here.
+<code>rocview.002.trc</code> covers 21:25 to 23:25.</li>
+<li><strong>Unregistered sensors 792 and 793.</strong> In
+<code>DMJK-Adresser.pdf</code>, these are &quot;Ledig&quot; (free) on Sigdal
+RS-16-O i#3, ports 9 and 10 (RS address 99). This is the same module as
+id16-id21, the route and signal control sensors towards Myra. Inputs
+that should be free report &quot;on&quot;. Possible causes are a wiring error, a
+new sensor that isn&#39;t in the plan, or a fault on the module. Check this
+on the Sigdal - Myra stretch.</li>
+<li><strong>Route requests and manual signal changes on Sigdal -
+Myra.</strong> Between 23:08 and 23:22, the operator set sensors id16,
+id17 and id20 from Rocview. These sensors are panel control inputs, not
+track detectors: id16 requests an exit towards Myra (sets
+<code>ioUTy</code>), id17 an entry from Myra (sets <code>ioINy</code>)
+and id20 the direction towards g. Setting them from Rocview is how the
+panel buttons are simulated, so this looks like testing the route. The
+operator also flipped signal ys01 3 times. That is a manual override.
+ys01 is on Myra block yd08, the same block as is03, whose port2 is
+wrong. Earlier, at 22:30 and 23:17, is09 and is10 were flipped by
+hand.</li>
+<li><strong>Outputs without address</strong> (<code>krt-busy</code>,
+<code>koCtl</code>): Rocrail skips the command. These look like virtual
+helper outputs used by actions, so this is probably by design.</li>
+<li><strong>&quot;Route ... is not locked&quot;</strong>: debug messages from
+action conditions during shutdown. Not an error.</li>
+<li><strong>Socket <code>*broken*</code> rc=10054, &quot;disconnect from
+server&quot;, throttle warnings, &quot;Exit&quot;</strong>: all at 23:24:59, when
+Rocview closed. Normal shutdown.</li>
+<li><strong><code>koOccTmr</code></strong>: Rocview logs 239 updates of
+this variable during the session. It is a runtime timer, so the change
+from 21 to 5 in <code>analysis1.md</code> section 3 is runtime state,
+not configuration.</li>
+</ol>
+</body>
+</html>

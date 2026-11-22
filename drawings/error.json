@@ -1,0 +1,66 @@
+{
+  "source_pdf": "DMJK-Adresser.pdf",
+  "source_xml": "20261119232535091-DMJK-Layout.xml",
+  "source_xml_sha256": "5d026e12d558381f03dfeea98ef70693f5226c387949869dd58355f6d5b62758",
+  "findings": [
+    {
+      "kind": "sg",
+      "id": "is03",
+      "category": "signal",
+      "attributes": [
+        "port1",
+        "port2",
+        "port3",
+        "port4"
+      ],
+      "decoder_attributes": [
+        "addr",
+        "addr2",
+        "addr3",
+        "addr4"
+      ],
+      "observed": {
+        "port1": "1005",
+        "port2": "1005"
+      },
+      "expected": [
+        1005,
+        1006
+      ]
+    },
+    {
+      "kind": "co",
+      "id": "moP1",
+      "category": "signal",
+      "attributes": [
+        "port"
+      ],
+      "decoder_attributes": [
+        "addr"
+      ],
+      "observed": {
+        "port": "1026"
+      },
+      "expected": [
+        1018
+      ]
+    },
+    {
+      "kind": "co",
+      "id": "yoP1",
+      "category": "signal",
+      "attributes": [
+        "port"
+      ],
+      "decoder_attributes": [
+        "addr"
+      ],
+      "observed": {
+        "port": "1025"
+      },
+      "expected": [
+        1017
+      ]
+    }
+  ]
+}

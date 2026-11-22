@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Address findings</title><style>
+body { margin: 0; background: #f3f5f7; color: #17212b; font: 16px system-ui, sans-serif; }
+main { max-width: 1500px; margin: auto; padding: 1.5rem; }
+h1 { margin: 0 0 .4rem; } p { line-height: 1.45; }
+.legend { display: flex; flex-wrap: wrap; gap: 1rem; font-size: .9rem; }
+.canvas { overflow: auto; background: white; border: 1px solid #cbd5df; border-radius: 8px; margin: 1rem 0; }
+svg { display: block; }
+.track { fill: none; stroke: #34495e; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+text { text-anchor: middle; font: bold 12px system-ui, sans-serif; paint-order: stroke; stroke: white; stroke-width: 3px; stroke-linejoin: round; }
+.signal { fill: #394eaf; stroke: white; stroke-width: 2; }
+.signal-orientation { fill: #293d9e; font-size: 15px; }
+.signal-label { fill: #293d9e; } .turnout-label { fill: #a44c12; }
+.block-label { fill: #16634c; } .sensor-label { fill: #657280; font-size: 10px; }
+.output { fill: #7a4d95; stroke: white; stroke-width: 1; }
+.output-label { fill: #7a4d95; font-size: 10px; }
+.finding-marker { pointer-events: none; }
+.finding-marker rect { fill: none; stroke: #c4161c; stroke-width: 3; }
+.finding-triangle { fill: #c4161c; stroke: white; stroke-width: 1; }
+.finding-exclamation { fill: none; stroke: white; stroke-width: 2; stroke-linecap: round; }
+.finding-summary { color: #a00000; font-weight: bold; }
+.sensor { fill: #657280; stroke: white; stroke-width: 1; }
+.destination { fill: #273f54; font: bold 14px system-ui, sans-serif; }
+.module-groups { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 12px 0; }
+.module-group-button { cursor: pointer; background: white; border: 1px solid #8797a6;
+                       border-radius: 4px; padding: 5px 8px; font: inherit; }
+.module-group-button[aria-expanded="true"] { background: #e3edff; border-color: #185abc; }
+.module-note { margin: 8px 12px; font-size: 13px; }
+.feedback-modules { display: flex; flex-wrap: wrap; gap: 8px; padding: 12px 12px 0; }
+.feedback-module { border: 1px solid #8797a6; border-radius: 4px; padding: 5px 8px;
+                   font-size: 13px; line-height: 1.4; width: max-content; position: relative; }
+.feedback-module:hover, .feedback-module:focus-within { z-index: 2; }
+.feedback-module:focus-visible { outline: 2px solid #185abc; }
+.feedback-tooltip { display: none; position: absolute; top: 100%; left: 0; background: white;
+                    border: 1px solid #8797a6; box-shadow: 0 3px 8px #0003; padding: 8px;
+                    width: max-content; max-width: min(600px, calc(100vw - 3rem));
+                    box-sizing: border-box; overflow-x: auto; }
+.feedback-module:hover .feedback-tooltip, .feedback-module:focus-within .feedback-tooltip { display: block; }
+.feedback-module.tooltip-dismissed .feedback-tooltip { display: none; }
+.feedback-tooltip table { border-collapse: collapse; text-align: left; }
+.feedback-tooltip th, .feedback-tooltip td { border-bottom: 1px solid #dce2e8; padding: 3px 6px; white-space: nowrap; }
+.feedback-tooltip caption { text-align: left; font-weight: bold; }
+.feedback-detector { cursor: pointer; }
+.feedback-detector:focus { outline: 2px solid #185abc; }
+.feedback-ring { display: none; fill: none; stroke: #0059e8; stroke-width: 4; pointer-events: none; }
+.feedback-highlight .feedback-ring { display: block; }
+.feedback-module { cursor: pointer; }
+.feedback-panel-highlight { outline: 3px solid #0059e8; outline-offset: 2px; }
+.feedback-selection-status:not(:empty) { margin: 8px 12px; }
+.station-panel { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px 0; font-size: 13px; }
+.panel-marker { border: 1px solid #8797a6; border-radius: 4px; padding: 3px 6px; background: white; font: inherit; cursor: pointer; }
+.panel-marker.has-finding { border: 3px solid #c4161c; }
+.dependency-toolbar { margin: 1rem 0; }
+.dependency-toolbar > button { cursor: pointer; background: white; border: 1px solid #8797a6;
+                               border-radius: 4px; padding: 5px 8px; font: inherit; }
+.dependency-toolbar > button[aria-pressed="true"] { background: #e3edff; border-color: #185abc; }
+.dependency-inspector { background: white; border: 1px solid #8797a6; border-radius: 6px; padding: 8px;
+                        margin-top: 8px; font-size: 13px; overflow-wrap: anywhere; }
+.dependency-inspector p { margin: .25rem 0; line-height: 1.3; }
+.dependency-select-label { display: grid; gap: .35rem; margin-top: .75rem; font-weight: bold; }
+.dependency-select-label select { width: 100%; max-width: 100%; font: inherit; font-weight: normal;
+                                 padding: .35rem; box-sizing: border-box; }
+.dependency-action-details { margin-top: .75rem; padding: .75rem; border-left: 4px solid #185abc;
+                             border-radius: 4px; background: #f0f5fc; }
+.dependency-action-details h3 { margin: 0 0 .4rem; font-size: 13px; color: #233d60; }
+.dependency-inspector .dependency-note { color: #445568; margin: .35rem 0 .6rem; }
+.dependency-inspector .dependency-explanation { background: white; border: 1px solid #ccd9e9;
+  border-radius: 4px; padding: .5rem .65rem; margin: .4rem 0; font-size: 14px; line-height: 1.4; }
+.dependency-state-context { border-top: 1px solid #ccd9e9; margin-top: .5rem; padding-top: .5rem;
+                            font-size: 13px; color: #445568; }
+.dependency-action-details summary { cursor: pointer; margin-top: .4rem; font-weight: bold; }
+.dependency-link { background: none; border: 0; color: #174eab; padding: 0; font: inherit; text-decoration: underline; cursor: pointer; }
+.dependency-breadcrumbs { display: flex; flex-wrap: wrap; gap: .4rem; }
+.dependency-inspector ul { margin: .2rem 0 .5rem; }
+.dependency-inspector pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+body.dependency-mode g[data-kind="sw"], body.dependency-mode g[data-kind="sg"],
+body.dependency-mode g[data-kind="fb"], body.dependency-mode g[data-kind="bk"],
+body.dependency-mode g[data-kind="co"] { cursor: pointer; }
+body.dependency-mode .feedback-highlight .feedback-ring { display: none; }
+body.dependency-mode .feedback-panel-highlight { outline: none; }
+body.dependency-mode .dependency-reference .feedback-ring { display: block; stroke: #8d32b4; }
+body.dependency-mode .dependency-selected .feedback-ring { display: block; stroke: #d54b00; }
+body.dependency-mode .panel-marker.dependency-reference { outline: 3px solid #8d32b4; outline-offset: 2px; }
+body.dependency-mode .panel-marker.dependency-selected { outline: 3px solid #d54b00; outline-offset: 2px; }
+</style></head>
+<body><main><p><a href="index.html">All station drawings</a> · <a href="fixit.html">FixIt guide</a></p><h1>Address findings</h1>
+<p>Compared with XML <strong>20261119232535091-DMJK-Layout.xml</strong>. Source: DMJK-Adresser.pdf.</p>
+<p>A red box and warning triangle identify a mismatch or an unverified value, not a confirmed physical crash.
+These are comparisons with the documented addresses, not a live check of decoder settings. Verify the hardware
+and current specification before changing the layout. Only recorded address mismatches are rechecked here; rerun
+the analysis to discover new ones. Virtual-interface switches, nonzero decoder-address modes and PDF entries
+without matching XML objects are excluded.</p>
+<p>Address collisions and other analysis findings are not included in this overview.</p>
+<section><h2>is03 (sg)</h2><p><strong>Mismatch</strong> — signal address.</p><p>XML: port1=1005, port2=1005; documented addresses: 1005, 1006.</p><p>Drawing: <a href="sigdal.html#finding-sg-is03">Sigdal</a> · <a href="fixit.html#fix-sg-is03">FixIt guidance</a></p></section><section><h2>moP1 (co)</h2><p><strong>Mismatch</strong> — signal address.</p><p>XML: port=1026; documented addresses: 1018.</p><p>Drawing: <a href="mjondalen.html#finding-co-moP1">Mjøndalen</a> · <a href="fixit.html#fix-co-moP1">FixIt guidance</a></p></section><section><h2>yoP1 (co)</h2><p><strong>Mismatch</strong> — signal address.</p><p>XML: port=1025; documented addresses: 1017.</p><p>Drawing: <a href="mjondalen.html#finding-co-yoP1">Mjøndalen</a>, <a href="myra.html#finding-co-yoP1">Myra</a> · <a href="fixit.html#fix-co-yoP1">FixIt guidance</a></p></section></main></body></html>

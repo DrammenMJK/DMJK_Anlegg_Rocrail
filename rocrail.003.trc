@@ -1,0 +1,1224 @@
+20261119.232458.560 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232458.575 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232458.575 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232458.575 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232458.575 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232458.575 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.575 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232458.591 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.591 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232458.591 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232458.607 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232458.607 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232458.607 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232458.607 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232458.607 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232458.607 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232458.607 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232458.607 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232458.607 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232458.607 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232459.560 r9999a cmdr0909 OModel   2612 model: plantitle
+20261119.232459.622 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232459.622 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232459.622 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232459.622 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232459.622 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232459.622 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232459.622 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.622 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.622 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232459.622 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.622 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.622 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.638 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.638 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232459.638 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.638 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.638 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.638 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232459.638 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232459.638 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.654 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232459.654 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.654 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232459.669 r9999W cmdr0909 OSocket  0613 *broken* errno=0, rc=10054, read=-1
+20261119.232459.669 r9999I cmdr0909 OClntCon 0463 Server ended.
+20261119.232459.669 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.669 r9999I infw0909 OClntCon 0194 InfoService ended.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232459.669 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.669 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232459.669 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232459.669 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.669 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232459.669 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232459.685 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.685 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232459.685 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.685 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232459.685 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-koLFlok:off] 
+20261119.232459.685 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232459.685 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232459.685 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232459.685 r9999I tid0x09E OAction  2006 action timer started koCtlOff [0ms] 
+20261119.232459.794 r9999I communic OXNet    1046 Sensor 792=on
+20261119.232459.794 r9999a 00001E54 OModel   5173 trying to match sensor event: [xpr] 0:792 uidname=[] state=1 code= regval=0 info=
+20261119.232459.794 r9999a 00001E54 OModel   5209 sensor key: 0_792_xpr_
+20261119.232459.794 r9999a 00001E54 OModel   5229 unregistered sensor event: [xpr] 0:792 uidname=[]
+20261119.232459.794 r9999I communic OXNet    1046 Sensor 793=on
+20261119.232459.794 r9999a 00001E54 OModel   5173 trying to match sensor event: [xpr] 0:793 uidname=[] state=1 code= regval=0 info=
+20261119.232459.794 r9999a 00001E54 OModel   5209 sensor key: 0_793_xpr_
+20261119.232459.794 r9999a 00001E54 OModel   5229 unregistered sensor event: [xpr] 0:793 uidname=[]
+20261119.232500.701 r9999I tid0x09E OAction  0741 setting output [koCtl] to [off] []
+20261119.232500.701 r9999I tid0x09E OOutput  0305 setting output koCtl to off [0]
+20261119.232500.701 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.701 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232500.701 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232500.701 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232500.716 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.716 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232500.716 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232500.732 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232500.732 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232500.732 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232500.732 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232500.732 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232500.732 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232500.732 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232500.732 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232501.747 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232501.747 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232501.747 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232501.747 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232501.747 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232501.747 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.747 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232501.747 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.747 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.763 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.763 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232501.763 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.763 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.763 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232501.763 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.763 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232501.763 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.763 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.763 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232501.779 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232501.779 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232501.779 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232501.779 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.779 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232501.779 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232501.779 r9999I tid0x09E OAction  0421 Action condition: [co-koLFlok:off] 
+20261119.232501.779 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.779 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.794 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.810 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.810 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232501.810 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232501.810 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232501.810 r9999I tid0x09E OAction  2006 action timer started koCtlOff [0ms] 
+20261119.232501.841 r9999I communic OXNet    1046 Sensor 792=off
+20261119.232501.841 r9999a 00001E54 OModel   5173 trying to match sensor event: [xpr] 0:792 uidname=[] state=0 code= regval=0 info=
+20261119.232501.841 r9999a 00001E54 OModel   5209 sensor key: 0_792_xpr_
+20261119.232501.841 r9999a 00001E54 OModel   5229 unregistered sensor event: [xpr] 0:792 uidname=[]
+20261119.232501.841 r9999I communic OXNet    1046 Sensor 793=off
+20261119.232501.841 r9999a 00001E54 OModel   5173 trying to match sensor event: [xpr] 0:793 uidname=[] state=0 code= regval=0 info=
+20261119.232501.872 r9999a 00001E54 OModel   5209 sensor key: 0_793_xpr_
+20261119.232501.904 r9999a 00001E54 OModel   5229 unregistered sensor event: [xpr] 0:793 uidname=[]
+20261119.232502.825 r9999I tid0x09E OAction  0741 setting output [koCtl] to [off] []
+20261119.232502.825 r9999I tid0x09E OOutput  0305 setting output koCtl to off [0]
+20261119.232502.825 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.825 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.841 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.841 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232502.841 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.841 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232502.841 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.841 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232502.841 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232502.841 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.841 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232502.856 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.856 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232502.856 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232502.872 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.872 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232502.872 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.888 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232502.888 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232502.888 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232502.888 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.888 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232502.888 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.888 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232502.888 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232502.888 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232502.888 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232502.888 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232502.888 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232502.888 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232503.903 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232503.903 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232503.903 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232503.903 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232503.903 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232503.903 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232503.903 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.903 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.903 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232503.903 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.903 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.919 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.919 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.919 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232503.919 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.919 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.919 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.919 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232503.919 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232503.935 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.935 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.935 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232503.935 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232503.935 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.935 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.935 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232503.935 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.950 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.950 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.950 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.950 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.950 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232503.950 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.950 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232503.950 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232503.966 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232503.966 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232503.966 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232503.966 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.966 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232503.981 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.981 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232503.981 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.981 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232503.981 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-koLFlok:off] 
+20261119.232503.981 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232503.981 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232503.981 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232503.981 r9999I tid0x09E OAction  2006 action timer started koCtlOff [0ms] 
+20261119.232504.997 r9999I tid0x09E OAction  0741 setting output [koCtl] to [off] []
+20261119.232504.997 r9999I tid0x09E OOutput  0305 setting output koCtl to off [0]
+20261119.232504.997 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232504.997 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232505.013 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.013 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232505.013 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.013 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232505.013 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232505.013 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.013 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232505.013 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232505.028 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232505.028 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.028 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232505.028 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232505.044 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232505.044 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232505.044 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232505.044 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232505.044 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232506.060 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232506.060 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232506.060 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232506.060 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232506.060 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232506.060 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232506.060 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.060 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.060 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232506.060 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.060 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.060 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.060 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.060 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232506.075 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.075 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.075 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.075 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232506.075 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232506.075 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.075 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232506.091 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.091 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.091 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232506.107 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.107 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232506.107 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.107 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232506.107 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.107 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232506.107 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232506.107 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232506.107 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.107 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232506.107 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.107 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232506.122 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232506.122 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232506.122 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.122 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232506.122 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.122 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.122 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232506.122 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232506.122 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232506.138 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232506.138 r9999I tid0x09E OAction  0421 Action condition: [co-koLFlok:off] 
+20261119.232506.138 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232506.138 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232506.138 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232506.138 r9999I tid0x09E OAction  2006 action timer started koCtlOff [0ms] 
+20261119.232507.153 r9999I tid0x09E OAction  0741 setting output [koCtl] to [off] []
+20261119.232507.153 r9999I tid0x09E OOutput  0305 setting output koCtl to off [0]
+20261119.232507.153 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.153 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.169 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232507.185 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.185 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232507.185 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232507.200 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.200 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232507.200 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232507.216 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232507.216 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232507.216 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232507.216 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232507.216 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232507.216 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232507.216 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232507.216 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232507.216 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232507.216 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232507.216 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232508.232 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232508.232 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232508.232 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232508.232 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232508.232 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232508.232 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.232 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232508.232 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.232 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.232 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232508.232 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.232 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.232 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232508.232 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.247 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232508.247 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.247 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232508.263 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232508.263 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232508.263 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232508.263 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232508.263 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232508.263 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232508.263 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232508.263 r9999I tid0x09E OAction  0421 Action condition: [co-koLFlok:off] 
+20261119.232508.263 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.263 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232508.278 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232508.278 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [off-on]
+20261119.232508.278 r9999I tid0x09E OAction  2006 action timer started koCtlOff [0ms] 
+20261119.232509.294 r9999I tid0x09E OAction  0741 setting output [koCtl] to [off] []
+20261119.232509.294 r9999I tid0x09E OOutput  0305 setting output koCtl to off [0]
+20261119.232509.294 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.294 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.310 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.310 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.310 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.310 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:yellow] 
+20261119.232509.310 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.310 r9999I tid0x09E OAction  0421 Action condition: [sg-gs02:green] 
+20261119.232509.310 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [sg-gs11:green] 
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [co-goUTk:on] 
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:yellow] 
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [sg-ks01:green] 
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [sg-ks02:green] 
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ms:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-ms is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-mg:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-mg is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gi:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gi is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gm:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gm is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-gh:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-gh is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-si:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-si is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sm:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-sm is not locked
+20261119.232509.325 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.325 r9999I tid0x09E OAction  0421 Action condition: [st-krt-sh:locked] 
+20261119.232509.325 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-sh is not locked
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [st-krt-is:locked] 
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-is is not locked
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [st-krt-ig:locked] 
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-ig is not locked
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hs:locked] 
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-hs is not locked
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [st-krt-hg:locked] 
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232509.341 r9999a tid0x09E ORoute   1994 route krt-hg is not locked
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232509.341 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232509.341 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232509.341 r9999a tid0x09E OOutput  0200 koCtl action state does not match: [on-off]
+20261119.232509.357 r9999I tid0x09E OAction  2006 action timer started koCtlOn [0ms] 
+20261119.232509.357 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232509.357 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232509.357 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232510.372 r9999I tid0x09E OAction  0741 setting output [koCtl] to [on] []
+20261119.232510.372 r9999I tid0x09E OOutput  0305 setting output koCtl to on [0]
+20261119.232510.372 r9999I tid0x09E OOutput  0423 Output [koCtl] has no address set; Skip command.
+20261119.232510.372 r9999I tid0x09E OAction  0741 setting output [krt-busy] to [off] []
+20261119.232510.372 r9999I tid0x09E OOutput  0305 setting output krt-busy to off [0]
+20261119.232510.372 r9999I tid0x09E OOutput  0423 Output [krt-busy] has no address set; Skip command.
+20261119.232510.372 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.372 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.372 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232510.372 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.372 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.372 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.372 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.372 r9999I tid0x09E OAction  0421 Action condition: [co-koRTmp:on] 
+20261119.232510.372 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.372 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.372 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232510.388 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.388 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232510.388 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.388 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232510.388 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232510.388 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTgp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTsp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [fb-gd04:false] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [fb-yd04:true] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [fb-kd07:true] 
+20261119.232510.404 r9999I tid0x09E OAction  0685 Condition is not true
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTip:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRTid:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.404 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.404 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 
+20261119.232510.404 r9999I tid0x09E OAction  0680 One 'must' condition is not true; Skip action.
+20261119.232510.419 r9999I tid0x09E OAction  0703 No 'or' condition is not true; Skip action.
+20261119.232510.419 r9999I tid0x09E OAction  0421 Action condition: [co-krt-busy:off] 
+20261119.232510.419 r9999I tid0x09E OAction  0675 One condition is true.
+20261119.232510.419 r9999I tid0x09E OAction  0421 Action condition: [co-koRThp:on] 

@@ -1,0 +1,129 @@
+"""Generate the experimental Solberg simulator.
+
+Usage: python simulation\\solberg.py [PLAN.xml]
+       python simulation\\solberg.py --check
+"""
+import argparse
+import html
+import json
+from pathlib import Path
+import shutil
+import sys
+import xml.etree.ElementTree as ET
+
+
+ROOT = Path(__file__).resolve().parent.parent
+OUTPUT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+
+import signal_logic
+from drawings import stations
+
+
+def extract_simulation(root, xml_path, report):
+    plan = stations.extract_plan(root, xml_path, report, "solberg")
+    _, triggers, _ = signal_logic.load(xml_path)
+    plan["actions"] = []
+    for trigger in triggers:
+        if trigger.action_type not in ("sg", "co", "sw", "fb") or not trigger.target:
+            continue
+        plan["actions"].append({
+            "id": trigger.action.get("id"),
+            "caller_type": trigger.caller_tag,
+            "caller_id": trigger.caller_id,
+            "caller_state": trigger.state,
+            "target_type": trigger.action_type,
+            "target": trigger.target,
+            "command": trigger.command,
+            "all_conditions": trigger.all,
+            "conditions": [{key: condition[key] for key in ("type", "id", "state", "mustbetrue")
+                            if key in condition} for condition in trigger.conds],
+        })
+    plan["states"] = {}
+    for tag in ("sw", "sg", "fb", "co", "st", "vr"):
+        plan["states"][tag] = {element.get("id"): element.get("state")
+                               for element in root.findall(f"./{tag}list/{tag}")
+                               if element.get("id") and element.get("state") is not None}
+    panel_ids = {"sd05", "sd06", "sd07", "sd08", "sd18", "sd19", "sd21"}
+    plan["panel_inputs"] = {
+        element.get("id"): {"id": element.get("id"), "desc": element.get("desc", ""),
+                            "address": stations.address_for(element)}
+        for element in root.findall("./fblist/fb") if element.get("id") in panel_ids
+    }
+    return plan
+
+
+def render_html(plan):
+    simulator = (OUTPUT / "solberg_simulator.js").read_text(encoding="utf-8")
+    data = json.dumps(plan, ensure_ascii=False).replace("<", "\\u003c")
+    titles = {key: html.escape(stations.object_title(value), quote=True)
+              for key, value in plan["panel_inputs"].items()}
+    direction_title = html.escape(
+        stations.object_title(plan["panel_inputs"]["sd18"]) + " · " +
+        stations.object_title(plan["panel_inputs"]["sd19"]), quote=True)
+    missing = ", ".join(plan["references_outside_drawing"]) or "none"
+    return f"""<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solberg station — experimental simulator</title><style>{stations.STYLE}
+.track .selected {{ stroke: #138744; stroke-width: 3; }}
+.track .inactive {{ opacity: .3; }}
+.turnout {{ cursor: pointer; }} .turnout:focus {{ outline: 2px solid #185abc; }}
+.signal {{ fill: #c62828; }}
+.signal.green {{ fill: #138744; }} .signal.yellow {{ fill: #e4ad00; }} .signal.white {{ fill: white; stroke: #34495e; }}
+</style></head>
+<body><main><h1>Solberg station</h1>
+<p>Experimental, offline simulation from <strong>{html.escape(plan["source_xml"])}</strong>. Set turnouts, choose a direction, then press a panel switch. Green tracks connect station blocks, drawing edges or a buffer stop; they are not locked routes or permission to drive. Turnouts start straight and signals red.</p>
+<p>Panel, output, turnout, sensor and signal actions are replayed without timing. Route locking and other action types are not simulated; detectors start from the XML snapshot and have no controls here. This is not Rocrail or live status. Hover for XML details and addresses.</p>
+<p><label>Exit direction: <select id="direction" title="{direction_title}"><option value="0">Skiftegård (00)</option><option value="1">Sigdal (01)</option><option value="2">Mjøndalen (10)</option><option value="3">Havna (11)</option></select></label>
+<button id="reset" type="button">Reset simulation</button></p>
+<div class="legend" aria-label="Solberg panel switches">
+<button type="button" data-panel="sd05" title="{titles['sd05']}">sd05 · Out i/r</button>
+<button type="button" data-panel="sd06" title="{titles['sd06']}">sd06 · In i/r</button>
+<button type="button" data-panel="sd07" title="{titles['sd07']}">sd07 · In g/k</button>
+<button type="button" data-panel="sd08" title="{titles['sd08']}">sd08 · Out g/i/m</button>
+<button type="button" disabled title="{titles['sd21']} · No action is attached in the XML">sd21 · Out H0m (no action)</button>
+</div><p id="status" role="status"></p>
+<div class="legend"><span>🔴 stop</span><span>🟢 proceed</span><span>🟡 caution</span><span style="color:#a44c12">Turnout (click or Enter)</span><span style="color:#16634c">Block / highlighted track</span><span style="color:#657280">● Detector</span><span>Scroll horizontally to see the full plan.</span></div>
+{stations.render_svg(plan, plan["bounds"], interactive=True)}
+<p>Coordinates and saved attributes are in <code>solberg.json</code>. Report references outside this drawing: {html.escape(missing)}.</p>
+<script id="plan-data" type="application/json">{data}</script><script>{simulator}</script>
+</main></body></html>
+"""
+
+
+def self_check(plan, drawing):
+    objects = {item["id"]: item for item in plan["objects"]}
+    assert not plan["references_outside_drawing"], plan["references_outside_drawing"]
+    assert (objects["ss01"]["x"], objects["ss01"]["y"]) == (3, 5)
+    assert objects["ss01"]["address"]["port1"] == "516"
+    assert objects["sv01"]["address"]["port1"] == "1"
+    assert plan["panel_inputs"]["sd06"]["address"]["addr"] == "537"
+    assert "Rocrail address:" in drawing
+    assert any(action["caller_id"] == "sd06" and action["target"] == "soINi" for action in plan["actions"])
+
+
+def main(legacy=False):
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("xml", nargs="?", type=Path)
+    parser.add_argument("--check", action="store_true", help="check the simulator data")
+    args = parser.parse_args()
+    xml_path = args.xml or max(ROOT.glob("*-DMJK-Layout.xml"), key=lambda path: path.name)
+    root = ET.parse(xml_path).getroot()
+    report = (ROOT / "signal_logic.md").read_text(encoding="utf-8")
+    plan = extract_simulation(root, xml_path, report)
+    if args.check:
+        self_check(plan, render_html(plan))
+        print("Solberg simulator data checks passed.")
+        return
+    json_path = OUTPUT / "solberg.json"
+    html_path = OUTPUT / "solberg.html"
+    json_path.write_text(json.dumps(plan, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    html_path.write_text(render_html(json.loads(json_path.read_text(encoding="utf-8"))), encoding="utf-8")
+    if legacy:
+        shutil.copyfile(json_path, ROOT / "solberg.json")
+        shutil.copyfile(html_path, ROOT / "solberg.html")
+    print(f"Wrote simulator to {OUTPUT} from {xml_path.name}.")
+
+
+if __name__ == "__main__":
+    main()

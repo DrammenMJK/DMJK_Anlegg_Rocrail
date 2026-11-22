@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10.2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Analysis 1: Layout diff 2026-11-12 vs 2026-11-19</title>
+  <style>
+
+html {
+color: #1a1a1a;
+background-color: #fdfdfd;
+}
+body {
+margin: 0 auto;
+max-width: 36em;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+hyphens: auto;
+overflow-wrap: break-word;
+text-rendering: optimizeLegibility;
+font-kerning: normal;
+}
+@media (max-width: 600px) {
+body {
+font-size: 0.9em;
+padding: 12px;
+}
+h1 {
+font-size: 1.8em;
+}
+}
+@media print {
+html {
+background-color: white;
+}
+body {
+background-color: transparent;
+color: black;
+}
+p, h2, h3 {
+orphans: 3;
+widows: 3;
+}
+h2, h3, h4 {
+page-break-after: avoid;
+}
+}
+p {
+margin: 1em 0;
+}
+a {
+color: #1a1a1a;
+}
+a:visited {
+color: #1a1a1a;
+}
+img {
+max-width: 100%;
+}
+svg {
+height: auto;
+max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+margin-top: 1.4em;
+}
+h5, h6 {
+font-size: 1em;
+font-style: italic;
+}
+h6 {
+font-weight: normal;
+}
+ol, ul {
+padding-left: 1.7em;
+margin-top: 1em;
+}
+li > ol, li > ul {
+margin-top: 0;
+}
+blockquote {
+margin: 1em 0 1em 1.7em;
+padding-left: 1em;
+border-left: 2px solid #e6e6e6;
+color: #606060;
+}
+code {
+white-space: pre-wrap;
+font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+font-size: 85%;
+margin: 0;
+hyphens: manual;
+}
+pre {
+margin: 1em 0;
+overflow: auto;
+}
+pre code {
+padding: 0;
+overflow: visible;
+overflow-wrap: normal;
+}
+.sourceCode {
+background-color: transparent;
+overflow: visible;
+}
+hr {
+border: none;
+border-top: 1px solid #1a1a1a;
+height: 1px;
+margin: 1em 0;
+}
+table {
+margin: 1em 0;
+border-collapse: collapse;
+width: 100%;
+overflow-x: auto;
+display: block;
+font-variant-numeric: lining-nums tabular-nums;
+}
+table caption {
+margin-bottom: 0.75em;
+}
+tbody {
+margin-top: 0.5em;
+border-top: 1px solid #1a1a1a;
+border-bottom: 1px solid #1a1a1a;
+}
+th {
+border-top: 1px solid #1a1a1a;
+padding: 0.25em 0.5em 0.25em 0.5em;
+}
+td {
+padding: 0.125em 0.5em 0.25em 0.5em;
+}
+header {
+margin-bottom: 4em;
+text-align: center;
+}
+#TOC li {
+list-style: none;
+}
+#TOC ul {
+padding-left: 1.3em;
+}
+#TOC > ul {
+padding-left: 0;
+}
+#TOC a:not(:hover) {
+text-decoration: none;
+}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Analysis 1: Layout diff 2026-11-12 vs 2026-11-19</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#1-summary" id="toc-1-summary">1. Summary</a></li>
+<li><a href="#2-signal-addresses-configuration-affects-hardware" id="toc-2-signal-addresses-configuration-affects-hardware">2. Signal
+addresses (configuration, affects hardware)</a></li>
+<li><a href="#3-variable-koocctmr" id="toc-3-variable-koocctmr">3.
+Variable <code>koOccTmr</code></a></li>
+<li><a href="#4-runtime-state-no-effect-on-action-logic" id="toc-4-runtime-state-no-effect-on-action-logic">4. Runtime state (no
+effect on action logic)</a></li>
+<li><a href="#5-cosmetic-and-environment-changes" id="toc-5-cosmetic-and-environment-changes">5. Cosmetic and environment
+changes</a></li>
+<li><a href="#6-check-against-dmjk-adresserpdf" id="toc-6-check-against-dmjk-adresserpdf">6. Check against
+DMJK-Adresser.pdf</a></li>
+<li><a href="#7-full-address-check-pdf-vs-new-xml" id="toc-7-full-address-check-pdf-vs-new-xml">7. Full address check: PDF
+vs new XML</a>
+<ul>
+<li><a href="#71-errors-on-the-sigdal---myra---mjøndalen-stretch" id="toc-71-errors-on-the-sigdal---myra---mjøndalen-stretch">7.1 Errors
+on the Sigdal - Myra - Mjøndalen stretch</a></li>
+<li><a href="#72-other-findings" id="toc-72-other-findings">7.2 Other
+findings</a></li>
+</ul></li>
+<li><a href="#8-not-checked" id="toc-8-not-checked">8. Not
+checked</a></li>
+</ul>
+</nav>
+<p>Files compared:</p>
+<ul>
+<li>Old: <code>20261112232305122-DMJK-Layout.xml</code></li>
+<li>New: <code>20261119232535091-DMJK-Layout.xml</code></li>
+</ul>
+<p>Tool: <code>python xmldiff.py OLD.xml NEW.xml xmldiff.txt</code>. The
+script matches elements by <code>id</code>, or by position when an
+element has no <code>id</code>. It reports added and removed elements,
+and changed attributes and text. Full output is in
+<code>xmldiff.txt</code>.</p>
+<h1 id="1-summary">1. Summary</h1>
+<p>The script found 168 differences. No elements were added or removed.
+No <code>&lt;action&gt;</code>, <code>&lt;actionctrl&gt;</code>
+condition, route or block definition changed.</p>
+<p>The only configuration change is the port addresses of 9 signals.
+Signal <code>is03</code> now has the same port on both outputs, which is
+almost certainly a typo.</p>
+<p>The check against <code>DMJK-Adresser.pdf</code> (sections 6 and 7)
+found 3 errors on the Sigdal - Myra - Mjøndalen stretch:</p>
+<ol type="1">
+<li><code>is03</code> port2 must be 1006, not 1005.</li>
+<li>Level crossing output <code>yoP1</code> (Myra) must be on 1017, not
+1025.</li>
+<li>Level crossing output <code>moP1</code> (Mjøndalen) must be on 1018,
+not 1026.</li>
+</ol>
+<p>It also found that output <code>soSloc</code> and signal
+<code>ss26</code> share address 528.</p>
+<p>Changed attributes, by count:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute</th>
+<th style="text-align: right;">Count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>counter</code></td>
+<td style="text-align: right;">65</td>
+</tr>
+<tr>
+<td><code>state</code></td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td><code>switched</code></td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td><code>wantedstate</code></td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr>
+<td><code>fieldstate</code></td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td><code>port1</code></td>
+<td style="text-align: right;">9</td>
+</tr>
+<tr>
+<td><code>port2</code></td>
+<td style="text-align: right;">7</td>
+</tr>
+<tr>
+<td><code>value</code></td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td><code>text</code></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td><code>rocrailip</code></td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td><code>rocrailpwd</code></td>
+<td style="text-align: right;">1</td>
+</tr>
+</tbody>
+</table>
+<h1 id="2-signal-addresses-configuration-affects-hardware">2. Signal
+addresses (configuration, affects hardware)</h1>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Old port1/port2</th>
+<th>New port1/port2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is01</td>
+<td>1153/1154</td>
+<td>1001/1002</td>
+</tr>
+<tr>
+<td>is02</td>
+<td>1155/1156</td>
+<td>1003/1004</td>
+</tr>
+<tr>
+<td>is03</td>
+<td>1157/1158</td>
+<td><strong>1005/1005</strong></td>
+</tr>
+<tr>
+<td>ys01</td>
+<td>1057/1058</td>
+<td>985/986</td>
+</tr>
+<tr>
+<td>ys02</td>
+<td>1075/1076</td>
+<td>995/996</td>
+</tr>
+<tr>
+<td>ys04</td>
+<td>1059/1060</td>
+<td>987/988</td>
+</tr>
+<tr>
+<td>ys05</td>
+<td>1073/1074</td>
+<td>993/994</td>
+</tr>
+<tr>
+<td>ys06</td>
+<td>1061/0</td>
+<td>989/0</td>
+</tr>
+<tr>
+<td>ys07</td>
+<td>1077/0</td>
+<td>997/0</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>Actions call signals by <code>id</code>, not by address. The action
+logic still runs the same way, but the commands now go to the new
+decoder addresses.</li>
+<li><strong>is03 has port2 = port1 = 1005.</strong> The pattern of the
+other signals says port2 should be 1006. With both outputs on one port,
+is03 (a 3-aspect light signal) can&#39;t show all aspects correctly. Fix
+this before you run the layout.</li>
+<li>The new ports (985 to 1005) don&#39;t clash with any other signal,
+switch or output in the new file.</li>
+</ol>
+<h1 id="3-variable-koocctmr">3. Variable <code>koOccTmr</code></h1>
+<p><code>vr[koOccTmr]</code> changed from 21 to 5. If an action uses
+this variable as a timer or a condition, this changes behavior. The
+value can also be runtime state that an action wrote. This analysis
+doesn&#39;t check where <code>koOccTmr</code> is set or read.</p>
+<h1 id="4-runtime-state-no-effect-on-action-logic">4. Runtime state (no
+effect on action logic)</h1>
+<ol type="1">
+<li>Sensor <code>counter</code> (65 changes): each
+<code>actionctrl</code> counter has the same value as the
+<code>counter</code> on its parent <code>fb</code>.</li>
+<li>Switch <code>state</code>, <code>wantedstate</code>,
+<code>fieldstate</code> and <code>switched</code>: the last position and
+the switch count.</li>
+<li>Sensor state <code>md14</code> and <code>nd06</code> (false to
+true). Signal <code>ss22</code> changed from red to green.</li>
+<li>Outputs <code>ioUTy</code>, <code>koLF</code> and
+<code>koLFlok</code> (state and value). Text <code>htxDir</code> state
+changed from true to false.</li>
+</ol>
+<p>Rocrail saves these values at shutdown and can restore them at
+startup. The starting positions then differ, but the logic doesn&#39;t.</p>
+<h1 id="5-cosmetic-and-environment-changes">5. Cosmetic and environment
+changes</h1>
+<ol type="1">
+<li><code>rocrailip</code> changed from 192.168.56.1 to 192.168.1.155,
+and <code>rocrailpwd</code> changed from the Roger user folder to the
+DMJK user folder. The file now comes from a different PC.</li>
+<li>The version label changed from
+<code>DMJK-Layout-V10, 20261111</code> to
+<code>DMJK-Layout-V10b, 20261114</code>.</li>
+<li>Text <code>mtxDir</code> changed from &quot;Solberg&quot; to &quot;Skifte&quot;.</li>
+</ol>
+<h1 id="6-check-against-dmjk-adresserpdf">6. Check against
+DMJK-Adresser.pdf</h1>
+<p>The PDF was converted to text with
+<code>pdftotext -layout DMJK-Adresser.pdf DMJK-Adresser.txt</code>. The
+PDF header says &quot;Oppdatert 14. november 2026 - ny signaldekoder kode med
+flere aspekt og nye adresser&quot;. This date matches the new version label
+<code>V10b, 20261114</code>, so the address change is intentional.</p>
+<p>How to read the PDF: each name line (for example
+<code>ys01 BR</code>, <code>ys01 BG</code>) is one OD-2 aspect. Each DCC
+address holds 2 aspects, so a signal with 4 name lines uses 2 addresses.
+The text extraction doesn&#39;t always align the names with the address
+column, so count the name lines from the decoder start address. The
+Solberg section, which didn&#39;t change, confirms this rule: ss27 =
+513/514, ss28 = 515, ss01 = 516/517, is13 = 518/519, ss06 = 521/522 and
+ss22 = 531 all match the XML.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Aspects in PDF</th>
+<th>PDF addresses</th>
+<th>New XML port1/port2</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ys01</td>
+<td>BR, BG, BY, ----</td>
+<td>985/986</td>
+<td>985/986</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>ys04</td>
+<td>BR, BG, BY, ----</td>
+<td>987/988</td>
+<td>987/988</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>ys06</td>
+<td>BR, BG</td>
+<td>989</td>
+<td>989/0</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>ys05</td>
+<td>BR, BG, BY, ----</td>
+<td>993/994</td>
+<td>993/994</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>ys02</td>
+<td>BR, BG, BY, ----</td>
+<td>995/996</td>
+<td>995/996</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>ys07</td>
+<td>BR, BG</td>
+<td>997</td>
+<td>997/0</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>is01</td>
+<td>IR, IG, IY, ----</td>
+<td>1001/1002</td>
+<td>1001/1002</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>is02</td>
+<td>FR, FG, FY, ----</td>
+<td>1003/1004</td>
+<td>1003/1004</td>
+<td>Match</td>
+</tr>
+<tr>
+<td>is03</td>
+<td>IR, IG, IY</td>
+<td>1005/1006</td>
+<td>1005/<strong>1005</strong></td>
+<td><strong>Mismatch</strong></td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li>The PDF confirms the is03 error: port2 must be 1006, not 1005. With
+port2 = 1005, the yellow aspect (IY) is sent to the wrong address.</li>
+<li>The PDF labels the second aspect of is01 as <code>si01 IG</code>.
+This is a typo in the PDF; it belongs to is01.</li>
+<li>The old addresses (1057 to 1077, 1153 to 1158) don&#39;t occur anywhere
+in the PDF.</li>
+<li>The PDF doesn&#39;t mention <code>koOccTmr</code>. Section 3 is still
+open.</li>
+</ol>
+<h1 id="7-full-address-check-pdf-vs-new-xml">7. Full address check: PDF
+vs new XML</h1>
+<p>Tool:
+<code>python pdfcheck.py DMJK-Adresser.pdf 20261119232535091-DMJK-Layout.xml pdfcheck.txt</code>.
+The script runs <code>pdftotext -raw</code>, which keeps each table row
+on one line, so every row carries its own DCC or sensor address. It
+compares every signal, level-crossing output, switch and detector in the
+PDF with the new XML:</p>
+<ol type="1">
+<li>Signals and outputs: the set of DCC addresses vs <code>sg</code>
+<code>port1</code>-<code>port4</code>, or <code>co</code>
+<code>port</code>.</li>
+<li>Switches: the DCC address vs <code>sw</code>
+<code>port1</code>.</li>
+<li>Detectors: the sensor address vs <code>fb</code>
+<code>addr</code>.</li>
+<li>In reverse: XML objects that use an address the PDF gives to another
+object of the same kind.</li>
+</ol>
+<p>Everything not listed below matches: all signals except is03, all
+switches and all detectors at Solberg, Skiftegården, Kobbarvik,
+Mjøndalen, Myra, Sigdal and Norbotten.</p>
+<h2 id="71-errors-on-the-sigdal---myra---mjøndalen-stretch">7.1 Errors
+on the Sigdal - Myra - Mjøndalen stretch</h2>
+<table>
+<thead>
+<tr>
+<th>Object</th>
+<th>Kind</th>
+<th>PDF</th>
+<th>XML</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>is03</td>
+<td>Signal, block <code>yd08</code></td>
+<td>1005/1006</td>
+<td>1005/<strong>1005</strong></td>
+<td>Yellow aspect (IY) can&#39;t be shown</td>
+</tr>
+<tr>
+<td>yoP1</td>
+<td>Output, level crossing Myra</td>
+<td>1017</td>
+<td><strong>1025</strong></td>
+<td>The level crossing at Myra doesn&#39;t get the command</td>
+</tr>
+<tr>
+<td>moP1</td>
+<td>Output, level crossing Mjøndalen</td>
+<td>1018</td>
+<td><strong>1026</strong></td>
+<td>The level crossing at Mjøndalen doesn&#39;t get the command</td>
+</tr>
+</tbody>
+</table>
+<ol type="1">
+<li><strong>is03</strong> sits on Myra block <code>yd08</code>, the same
+block as ys01. With both ports on 1005, the yellow aspect goes to the
+wrong address. Set <code>port2</code> to 1006.</li>
+<li><strong>yoP1 and moP1</strong> didn&#39;t change between the two XML
+files. The PDF of 14 November moved them to 1017/1018 (decoder y#3,
+&quot;Planovergang dekodere, bruker 1 adresse hver&quot;). The XML still uses
+1025/1026, so the actions <code>yoP1on</code>/<code>yoP1off</code> and
+<code>moP1on</code>/<code>moP1off</code> send to addresses with no
+decoder. <code>yoP1</code> is driven by sensor <code>yd05</code> and
+switch <code>yv03</code>. This is the most likely cause of problems at
+Myra if the decoders were reprogrammed to the PDF addresses. Set
+<code>yoP1</code> port to 1017 and <code>moP1</code> port to 1018.</li>
+<li>The PDF also lists <code>moP1</code> (688) and <code>yoP1</code>
+(689) as detectors on RS-8 m#2. The XML has no sensors on 688 or 689. If
+these are feedback from the level crossings, they aren&#39;t used in
+Rocrail.</li>
+</ol>
+<h2 id="72-other-findings">7.2 Other findings</h2>
+<ol type="1">
+<li><strong>Address collision <code>soSloc</code> /
+<code>ss26</code>.</strong> Output <code>soSloc</code> (&quot;Lokal Sifting
+(eksperimentell)&quot;) uses port 528. The PDF and the XML give 528 to the
+second address of signal ss26 (527/528). Switching <code>soSloc</code>
+changes the aspect of ss26, and the reverse. This didn&#39;t change between
+the two XML files.</li>
+<li><strong>Paired switches on a virtual interface.</strong> The PDF
+gives one DCC address to two switches: sv11/sv12, sv13/sv14, iv01/iv02,
+iv14/iv15, iv16/iv17, kv01/kv02, kv04/kv05, mv01/mv02, mv12/mv13 and
+yv06/yv07. In the XML, the second switch of each pair is on
+<code>iid=&quot;vrt&quot;</code> with a port in the 400 range. This looks
+intentional (the first switch drives the real decoder), so it isn&#39;t an
+error.</li>
+<li><strong>Test switches ib11-ib21</strong> (&quot;Togvei-brytere
+(testoppsett)&quot;, sensors 800-810) are <code>co</code> objects without an
+address in the XML. Sensors fb26, fb27 and fb28 use 800, 801 and 803.
+This is the test setup only.</li>
+<li><code>si01 IG</code> in the PDF is a typo for is01 (see section
+6).</li>
+</ol>
+<h1 id="8-not-checked">8. Not checked</h1>
+<ol type="1">
+<li>Whether any action uses the sensor <code>counter</code> as a
+condition.</li>
+<li>Where <code>koOccTmr</code> is set or read.</li>
+<li>Signal aspect patterns (<code>red</code>, <code>green</code>,
+<code>yellow</code> values) against the OD-2 configuration files in the
+PDF.</li>
+<li>Route definitions between Sigdal and Mjøndalen. Only the addresses
+of the objects on the stretch are checked.</li>
+</ol>
+</body>
+</html>
