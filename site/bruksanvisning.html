@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bruksanvisning for Rocrail-tegningene</title>
+  <style>
+    body { max-width: 900px; margin: auto; padding: 1.5rem; color: #17212b; font: 16px system-ui, sans-serif; line-height: 1.55; }
+    h1, h2 { line-height: 1.2; }
+    h2 { margin-top: 2rem; }
+    li { margin: .4rem 0; }
+    code { background: #f0f3f6; padding: .1rem .25rem; }
+    .note { border-left: 4px solid #185abc; padding: .2rem 1rem; background: #f0f5ff; }
+  </style>
+</head>
+<body>
+<h1>Bruksanvisning for Rocrail-tegningene</h1>
+
+<p>Dette er skjematiske tegninger av stasjoner og Rocrails kontrollnivå. Du kan undersøke
+objekter, moduler og avhengigheter uten å koble deg til anlegget.</p>
+<p class="note"><strong>Viktig:</strong> Tegningene viser data fra en lagret XML-fil, ikke
+live-status. De styrer ikke anlegget, er ikke målestokkriktige og viser ikke nødvendigvis
+alle Rocrails regler eller alle fysiske detaljer.</p>
+
+<h2>Åpne en tegning</h2>
+<ol>
+  <li>Åpne <a href="index.html">index.html</a> i en moderne nettleser, for eksempel Edge
+    eller Chrome. JavaScript må være aktivert.</li>
+  <li>Velg stasjon, eller velg <strong>Control level</strong> for Rocrails kontrollnivå.
+    Bruk <strong>All station drawings</strong> øverst på en tegning for å gå tilbake.</li>
+  <li>Rull sidelengs inne i tegningen for å se hele området. Hold musepekeren over et
+    objekt for å se ID, XML-opplysninger og eventuelt konfigurert adresse.</li>
+</ol>
+<p>Kontrollnivåets plasseringer er skjermkoordinater i Rocrail, ikke nødvendigvis
+fysiske plasseringer eller sporforbindelser. For eksempel ligger <code>is07</code> der.</p>
+
+<h2>Symboler</h2>
+<ul>
+  <li>Blå sirkel: signal. Oransje navn: sporveksel eller kryssing.</li>
+  <li>En liten pil ved et signal viser XML-verdien <code>ori</code>, altså Rocrails
+    symbolorientering. Den er ikke verifisert som signalets fysiske retning eller
+    togets kjøreretning. Ingen pil vises når XML mangler en kjent orientering.</li>
+  <li>Grønt navn: blokk. Grå sirkel og navn: tilbakemelder/detektor.</li>
+  <li>Lilla firkant og navn: et output-objekt. Noen er tegnet på sporet, men det betyr
+    ikke nødvendigvis at de har en fysisk dekoder eller adresse.</li>
+</ul>
+<p>Pilene og stedsnavnene ved sporendene viser forbindelser til andre områder. Noen
+stasjoner har mer enn ett utsnitt; rull nedover for å se resten.</p>
+
+<h2>Adresseavvik</h2>
+<p>En rød ramme med varseltrekant markerer et registrert adresseavvik eller en verdi
+som ikke kan kontrolleres. Hold musepekeren over objektet for å se XML-verdiene og
+de dokumenterte adressene. Rammen betyr ikke at en fysisk kollisjon er bekreftet.</p>
+<p>Åpne <a href="errors.html">Address findings</a> for oversikten og bruk
+tegningslenkene for å hoppe direkte til objektene. En melding varsler hvis XML-filen
+er endret siden analysen; nye avvik krever en ny analyse. Oversikten sammenligner
+adresser, ikke faktisk maskinvare, og viser ikke adressekollisjoner eller alle
+andre analysefunn.</p>
+<p><a href="fixit.html">FixIt guide</a> forklarer hvordan du kan undersøke og eventuelt
+endre registrerte adresseavvik i Rocview, med alternative valg dersom dokumentasjonen
+eller et planlagt output bør stå uendret. Veiledningen er på engelsk.</p>
+
+<h2>Finn moduler og tilkoblede objekter</h2>
+<ol>
+  <li>På en stasjonstegning åpner du én av knappene <strong>RS feedback</strong>,
+    <strong>LS100 turnouts</strong> eller <strong>DCC signal decoders</strong>.
+    Modultypene er skjult fra start, og én type vises om gangen.</li>
+  <li>Hold musepekeren over en modul, eller gi den tastaturfokus, for å se tabellen
+    med innganger, porter, adresser og aktuelle objekter.</li>
+  <li>Klikk på modulen for å markere objekter som vises i tegningen med blå ring.
+    Klikk igjen for å fjerne markeringen. Meldingen under modulene forteller om
+    noen tilknyttede objekter ikke vises i dette utsnittet.</li>
+  <li>Klikk på en detektor for å markere den og eventuelle tilknyttede objekter.
+    Knappene under <strong>Panel switches</strong> har lesbare navn; hold musepekeren
+    over en knapp for å se Rocrail-ID og opprinnelig XML-beskrivelse. De markerer mulige tilknyttede
+    sporveksler. Disse kan være knyttet via tilbakemelding, betingelser eller
+    kommandoer; markeringen betyr ikke at panelet styrer alle sporvekslene.</li>
+</ol>
+<p>LS100- og OD-2-fordelingen er basert på adressespesifikasjonen; Rocrail-adressene
+er hentet fra XML. Opplysningene er ikke en bekreftelse på faktisk kabling eller tilstand.</p>
+
+<h2>Undersøk avhengigheter</h2>
+<ol>
+  <li>Trykk <strong>Inspect dependencies</strong>. Klikk deretter på et signal,
+    en sporveksel, detektor, blokk, output eller en panelknapp.</li>
+  <li>Velg en sammenheng i listen <strong>Choose a relationship</strong>.
+    Under listen vises forklaringene i egne felt, med lesbare navn for hendelser,
+    betingelser og kommandoer.
+    Hold musepekeren over den valgte sammenhengen eller setningen for å se formelen med Rocrail-koder.
+    For noen interne output vises mulige følger for signaler direkte. Pek på setningen
+    for å se både original og utvidet formel, eller åpne <strong>Expanded Rocrail formulas</strong>.
+    Åpne <strong>Original relationship and code</strong> for å se den opprinnelige sammenhengen.
+    <strong>Trigger</strong> er hendelsen som utløser en handling, og
+    <strong>Result</strong> er handlingens resultat. En <strong>Route</strong> viser
+    en kommando som er knyttet til en rute.</li>
+  <li>Under <strong>All required</strong> må alle oppførte betingelser være oppfylt.
+    Under <strong>At least one of</strong> må minst én av de oppførte betingelsene
+    være oppfylt. Tomme grupper vises ikke.</li>
+  <li>Oransje ring markerer valgt objekt; lilla ring markerer objekter som inngår
+    i den valgte sammenhengen. Klikk på et objektnavn i detaljene for å følge
+    sammenhengen videre. Hold musepekeren over et navn for å se Rocrail-ID, eller åpne
+    <strong>Rocrail code details</strong> for de tekniske verdiene. Bruk
+    <strong>Navigation</strong> for å gå tilbake i kjeden.</li>
+  <li>Hvis objektet vises på en annen tegning, velger du lenken etter
+    <strong>See</strong>. <strong>not shown in any drawing</strong> betyr bare at
+    objektet ikke er med i disse tegningene, ikke nødvendigvis at det mangler i XML.</li>
+</ol>
+<p>Eksempel: På Sigdal kan du velge detektoren <code>id01</code>, velge
+en sammenheng som viser <code>is07red</code> ved musepeker, og følge lenken <strong>See Control level</strong> til
+<code>is07</code>. Der kan du åpne avhengighetsvisningen og klikke på signalet.</p>
+<p>Visningen leser de konfigurerte betingelsene, men beregner ikke om de er oppfylt.
+Utvidelsen følger opptil tre interne output frem til en signalhandling. Den viser mulige
+handlingskjeder, ikke én regel i XML eller en garanti for at signalet endres; betingelsene
+kontrolleres i hvert sitt trinn, og innstillinger og tidsforsinkelser kan ha betydning.
+En intern tilstand som inngår som betingelse, kan fortsatt vises: en tidligere hendelse
+er ikke nødvendigvis det samme som tilstanden nå. Der en konfigurert handling kan sette
+tilstanden, kan du åpne <strong>Stored condition</strong> for å se hendelsen. Lengre kjeder og manuelle endringer
+kan kreve at du ser på de opprinnelige sammenhengene.
+«Block» i beskrivelsen av en spordetektor viser til tilbakemelderens rapporterte tilstand,
+ikke nødvendigvis et Rocrail-blokkobjekt. Hold musepekeren over navnet for å se den
+tekniske ID-en. Panelknapper og andre innganger beskrives ikke automatisk som sporbelegg. Kommandoen
+til en planovergang bekrefter ikke hva den fysiske bommen gjør.
+Implisitte Rocrail-regler, blant annet rutelåsing, er ikke tatt med. Slå av
+<strong>Inspect dependencies</strong> for å gå tilbake til vanlig modul- og detektorvisning.</p>
+
+<h2>Dele tegningene</h2>
+<p>Hele <code>drawings</code>-mappen kan pakkes som ZIP og sendes videre. Mottakeren
+pakker ut alle filene til samme mappe og åpner <code>index.html</code>. Internettilgang,
+Rocrail, Python og XML-kildefilen er ikke nødvendig for å bruke de ferdige tegningene.
+HTML-filene inneholder dataene og skriptene de trenger; JSON-, Python- og sikkerhetskopifilene
+er ikke nødvendige for selve visningen.</p>
+<p>Den eksperimentelle Solberg-simulatoren ligger i en annen mappe og følger ikke
+med når bare <code>drawings</code> deles.</p>
+</body>
+</html>
